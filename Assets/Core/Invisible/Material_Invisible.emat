@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AlphaTest 0.275
+ CavityFromAO 1
+ BCRMap "{3277CD1C741DE956}Assets/Items/Equipment/Backpacks/Backpack_Kolobok/Data/Backpack_Kolobok_BCR.edds"
+ OpacityMap "{DF1F056340230E00}system/textures/defBlack.edds"
+ NMOMap "{0AAF768EAD6ABBC8}Assets/Items/Equipment/Backpacks/Backpack_Kolobok/Data/Backpack_Kolobok_NMO.edds"
+}

@@ -1,0 +1,6 @@
+MatPBRBasic : "{69143038095E0D4B}Assets/Characters/Patches/data/rhs_patch_ru_big_left.emat" {
+ EmissiveMap "{5559D8D4FD20471A}Assets/Characters/Patches/Groups/Watch Tower/data/OPA.edds"
+ BCRMap "{DAB9059A9E0C9B69}Assets/Characters/Patches/Groups/Watch Tower/data/BCR.edds"
+ OpacityMap "{5559D8D4FD20471A}Assets/Characters/Patches/Groups/Watch Tower/data/OPA.edds"
+ NMOMap 
+}

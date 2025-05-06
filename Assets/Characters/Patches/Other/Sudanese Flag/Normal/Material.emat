@@ -1,0 +1,4 @@
+MatPBRBasic : "{89E511B305815BB0}Assets/Characters/Patches/data/patch_ru_reflective.emat" {
+ BCRMap "{94562960C7AB92D4}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_SudaneseFlag_BCR.edds"
+ NMOMap "{EE046C9084FF43E8}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_SudaneseFlag_NMO.edds"
+}

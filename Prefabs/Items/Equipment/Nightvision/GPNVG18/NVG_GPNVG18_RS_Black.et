@@ -1,0 +1,34 @@
+GameEntity : "{807BD7539DE999EE}Prefabs/Items/Equipment/Nightvision/GPNVG18/NVG_GPNVG18_GP_Black.et" {
+ ID "5D7765E30127E8B9"
+ components {
+  BaseLightManagerComponent "{5D7765E30127E89F}" {
+   LightSlots {
+    BaseLightSlot "{5D7765E30127E8E2}" {
+     LightPrefab "{01F1A1AF660C061A}Prefabs/Items/Equipment/Nightvision/PVS14/NVG_Light_RS_light.et"
+    }
+    BaseLightSlot "{5DB0746D0D39F505}" {
+     LightPrefab "{CBE6453DF3614DD9}Prefabs/Items/Equipment/Nightvision/GPNVG18/NVG_Light_RS_light_GPNVG.et"
+    }
+    BaseLightSlot "{61BC6A14C4468355}" {
+     LightPrefab "{CBE6453DF3614DD9}Prefabs/Items/Equipment/Nightvision/GPNVG18/NVG_Light_RS_light_GPNVG.et"
+    }
+    BaseLightSlot "{61BC6A14CB6368AB}" {
+     LightPrefab "{CBE6453DF3614DD9}Prefabs/Items/Equipment/Nightvision/GPNVG18/NVG_Light_RS_light_GPNVG.et"
+    }
+    BaseLightSlot "{61BC6A14CA8526F5}" {
+     LightPrefab "{CBE6453DF3614DD9}Prefabs/Items/Equipment/Nightvision/GPNVG18/NVG_Light_RS_light_GPNVG.et"
+    }
+   }
+  }
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName UIInfo "{5DB09136B1C985EB}" {
+     Name "L3 GPNVG-18 Black (Red Sep)"
+    }
+   }
+  }
+  RHS_RhinoAttachmentComponent "{5D7765E30127E8D1}" {
+   m_sNVGGooglesHDRMatrial "{14DDB7F2DB8B346B}Assets/Items/Equipment/NVG/pvs14/data/NVG_RedSep_HDR.emat"
+  }
+ }
+}

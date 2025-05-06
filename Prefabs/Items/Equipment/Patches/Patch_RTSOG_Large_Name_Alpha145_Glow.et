@@ -1,0 +1,29 @@
+GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_Anderson.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Talon - Large - Alpha_145 - Glow"
+     Description "RTSOG - Talon - Large - Alpha_145 - Glow"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{650E971AD3267D2B}" {
+     SourceMaterial "rhs_patch_usmc_id_1"
+     AssignedMaterial "{57C052FB3FDB37EC}Assets/Characters/Patches/Talons/Alpha145/Large/Material_Glow.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{57C052FB3FDB37EC}Assets/Characters/Patches/Talons/Alpha145/Large/Material_Glow.emat"
+   }
+   ItemMaterialsOverride {
+    "{57C052FB3FDB37EC}Assets/Characters/Patches/Talons/Alpha145/Large/Material_Glow.emat"
+   }
+  }
+ }
+}

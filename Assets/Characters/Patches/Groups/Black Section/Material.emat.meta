@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{DDF5DF309255EF72}Assets/Characters/Patches/Groups/Black Section/data/patch_BlackSection.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

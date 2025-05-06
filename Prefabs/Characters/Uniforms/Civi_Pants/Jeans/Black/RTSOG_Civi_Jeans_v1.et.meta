@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{35F884CF40C464B7}Prefabs/Characters/Uniforms/Civi_Pants/RTSOG_Civi_Jeans_v1.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

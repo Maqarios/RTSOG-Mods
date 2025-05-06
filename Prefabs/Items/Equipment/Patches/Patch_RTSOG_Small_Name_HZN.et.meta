@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A02B043E3E6E1A8C}Prefabs/Items/Equipment/Patches/Patch_RTSOG_Small_Name_HZN.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

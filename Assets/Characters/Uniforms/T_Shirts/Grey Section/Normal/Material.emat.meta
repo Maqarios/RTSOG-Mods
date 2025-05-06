@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A7274429998E5DB2}Assets/Characters/Uniforms/T_Shirts/Black Section/Material2.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

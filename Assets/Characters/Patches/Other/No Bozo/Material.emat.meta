@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4F8F615F739649BD}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_NoBozo.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

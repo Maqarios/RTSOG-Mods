@@ -1,0 +1,10 @@
+MatPBRBasic : "{69143038095E0D4B}Assets/Characters/Patches/data/rhs_patch_ru_big_left.emat" {
+ DiffuseIBL 0.223 0.223 0.223 1
+ SpecularIBL 0.223 0.223 0.223 1
+ Diffuse 0.223 0.223 0.223 1
+ Specular 0.223 0.223 0.223 1
+ EmissiveMap "{824EF8AE12AE3B4C}Assets/Characters/Patches/Logo/Red and Black/Large/data/EMI.edds"
+ BCRMap "{A8814DFD85BADC7E}Assets/Characters/Patches/Other/No Bacon/data/BCR.edds"
+ OpacityMap "{276190B3E696000D}Assets/Characters/Patches/Other/No Bacon/data/OPA.edds"
+ NMOMap "{9059F66F5CCD8EE0}Assets/Characters/Patches/Other/No Bacon/data/NMO.edds"
+}

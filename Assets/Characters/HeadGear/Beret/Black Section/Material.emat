@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.502 0.502 0.502 1
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{50CE900A2D2F518C}Assets/Characters/HeadGear/Beret/Black Section/Data/BCR.edds"
+ NormalPower 2.716
+ NMOMap "{BE0B2BF97ADBB83D}Assets/Characters/HeadGear/Beret/Data/Maroon/Beret_basic_NMO.edds"
+}

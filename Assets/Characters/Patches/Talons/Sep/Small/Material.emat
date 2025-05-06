@@ -1,0 +1,8 @@
+MatPBRBasic : "{89E511B305815BB0}Assets/Characters/Patches/data/patch_ru_reflective.emat" {
+ DiffuseIBL 0.078 0.078 0.078 1
+ SpecularIBL 0.078 0.078 0.078 1
+ Diffuse 0.078 0.078 0.078 1
+ Specular 0.078 0.078 0.078 1
+ BCRMap "{663AB162794C7DFD}Assets/Characters/Patches/Talons/Sep/Small/data/BCR.edds"
+ NMOMap "{5EE20AF0A03B2F63}Assets/Characters/Patches/Talons/Sep/Small/data/NMO.edds"
+}

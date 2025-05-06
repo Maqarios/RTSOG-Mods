@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B82D7C4CB3443968}Prefabs/Characters/Uniforms/T_Shirts/T_Shirt_v2/RTSOG_T_shirt_v2_BlackSection.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

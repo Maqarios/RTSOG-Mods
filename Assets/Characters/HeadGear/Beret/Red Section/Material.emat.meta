@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0E2BCC1355F5E680}Assets/Characters/HeadGear/Beret/Black Section/Material2.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

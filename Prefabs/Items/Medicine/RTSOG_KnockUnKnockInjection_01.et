@@ -1,0 +1,25 @@
+GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Knock Un Knock (KUK) Injector"
+     Description "One moment in hell, another in heaven."
+    }
+   }
+  }
+  MeshObject "{59CE87DB17B6B1C5}" {
+   Materials {
+    MaterialAssignClass "{6510F82E9D4D6DC8}" {
+     SourceMaterial "MorphineInjection_01"
+     AssignedMaterial "{68F25429EE109BFD}Assets/Items/Medicine/data/KnockUnKnockInjection_01.emat"
+    }
+   }
+  }
+  SCR_ConsumableItemComponent "{59E68C74C5CEE74F}" {
+   m_ConsumableEffect RTSOG_ConsumableEffectHealthItems "{59E68C74C1F3910E}" {
+   }
+  }
+ }
+}

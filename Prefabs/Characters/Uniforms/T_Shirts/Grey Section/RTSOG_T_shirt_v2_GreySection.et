@@ -1,0 +1,35 @@
+GameEntity : "{18E92AA4457A4203}Prefabs/Characters/Uniforms/T_Shirts/T_Shirt_v2/T_shirt_v2_base.et" {
+ ID "5104869D194C6243"
+ components {
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{6532CA1F1E0E6354}" {
+     SourceMaterial "shirt_v2_folded"
+     AssignedMaterial "{9A7504B5E65A1F78}Assets/Characters/Uniforms/T_Shirts/Grey Section/Tucked/Material.emat"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Shirt - Grey Section - Tucked"
+     Description ""
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 0
+      PreviewModel "{C554ACEE0E8C690C}Prefabs/Characters/Uniforms/T_Shirts/Black Section/Preview/RTSOG_T_shirt_v2_BlackSection_wear.et"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{9A7504B5E65A1F78}Assets/Characters/Uniforms/T_Shirts/Grey Section/Tucked/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{9A7504B5E65A1F78}Assets/Characters/Uniforms/T_Shirts/Grey Section/Tucked/Material.emat"
+   }
+  }
+ }
+}

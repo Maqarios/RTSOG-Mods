@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B0C91619CF15F9C0}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndGold.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,34 @@
+GameEntity : "{74CE423A2EF162C5}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/ION_Shirt_base.et" {
+ ID "5104869D194C6243"
+ components {
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{6530D0070A3092D3}" {
+     SourceMaterial "rhs_ion_casual_shirt"
+     AssignedMaterial "{A7274429998E5DB2}Assets/Characters/Uniforms/T_Shirts/Grey Section/Material.emat"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Shirt - Grey Section"
+     Description ""
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewModel "{90B596CD95901BB7}Prefabs/Characters/Uniforms/T_Shirts/Grey Section/preview/RTSOG_Casual_Shirt_GreySection_wear.et"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{A7274429998E5DB2}Assets/Characters/Uniforms/T_Shirts/Grey Section/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{A7274429998E5DB2}Assets/Characters/Uniforms/T_Shirts/Grey Section/Material.emat"
+   }
+  }
+ }
+}

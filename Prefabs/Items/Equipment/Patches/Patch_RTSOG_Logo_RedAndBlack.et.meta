@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5791F0166D8B41EE}Prefabs/Items/Equipment/Patches/Patch_RTSOG_Logo_RedAndBlack.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

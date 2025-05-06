@@ -1,0 +1,31 @@
+GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Reflective.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Groups - Chalk Team"
+     Description "RTSOG - Groups - Green Team"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{64F2C050F64ACCD3}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{2C0ED4A0C25EA131}Assets/Characters/Patches/Groups/Chalk Team/Material.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{2C0ED4A0C25EA131}Assets/Characters/Patches/Groups/Chalk Team/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{2C0ED4A0C25EA131}Assets/Characters/Patches/Groups/Chalk Team/Material.emat"
+   }
+  }
+ }
+ coords 0 0 -0.045
+ angleY 63.84
+}

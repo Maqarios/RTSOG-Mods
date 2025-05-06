@@ -1,0 +1,39 @@
+GenericEntity {
+ ID "64F20423BB0B60C8"
+ components {
+  MeshObject "{64F20423BB08675A}" {
+   Object "{BEB98A0ECF1C73E8}Billboard/WillowBillboard.xob"
+   Materials {
+    MaterialAssignClass "{64F21A27C07EAC27}" {
+     SourceMaterial "Screen1"
+     AssignedMaterial "{58371144AC18F6CC}Assets/Props/Signs/data/RTSOG_Billboard.emat"
+    }
+   }
+  }
+  RigidBody "{64F20423BB08673E}" {
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_EditableEntityComponent "{64F20423BB086707}" {
+   m_EntityType ITEM
+   m_UIInfo SCR_EditableEntityUIInfo "{64F20423BB08670C}" {
+    Name "RTSOG - Billboard"
+    Description "RTSOG - Billboard"
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     1 1001
+    }
+    m_aAutoLabels {
+     11
+    }
+   }
+   m_Flags PLACEABLE
+  }
+  SCR_PlacingEditorComponent "{64F20423BB086717}" {
+  }
+  RplComponent "{64F20423BB086712}" {
+  }
+ }
+ coords -0.517 -0.913 -1.882
+ scale 2
+}

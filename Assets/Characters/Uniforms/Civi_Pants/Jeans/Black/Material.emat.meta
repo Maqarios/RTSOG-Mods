@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C297F8188EF1AB35}Assets/Characters/Uniforms/Civi_Pants/Jeans/Black/Data/Material.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

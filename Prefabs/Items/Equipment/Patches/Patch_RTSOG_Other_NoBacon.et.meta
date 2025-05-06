@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B5D7C6C84B1018AD}Prefabs/Items/Equipment/Patches/Patch_RTSOG_Other_NoBacon.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

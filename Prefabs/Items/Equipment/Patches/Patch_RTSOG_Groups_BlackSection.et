@@ -1,0 +1,38 @@
+GameEntity : "{B6CC74F306F54A8D}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName UIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Group - Black Section"
+     Description "RTSOG - Group - Black Section"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5DB09136B1C985C3}" {
+      FOV 7
+     }
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Object "{F382055CC558A234}Assets/Characters/Patches/rhs_patch_blood_Apos.xob"
+   Materials {
+    MaterialAssignClass "{6536A51A2AEB0127}" {
+     SourceMaterial "patch_us_flag"
+     AssignedMaterial "{DDF5DF309255EF72}Assets/Characters/Patches/Groups/Black Section/Material.emat"
+    }
+   }
+   PixelSizeScale 3
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornModel "{F382055CC558A234}Assets/Characters/Patches/rhs_patch_blood_Apos.xob"
+   WornMaterialsOverride {
+    "{DDF5DF309255EF72}Assets/Characters/Patches/Groups/Black Section/Material.emat"
+   }
+   ItemModel "{F382055CC558A234}Assets/Characters/Patches/rhs_patch_blood_Apos.xob"
+   ItemMaterialsOverride {
+    "{DDF5DF309255EF72}Assets/Characters/Patches/Groups/Black Section/Material.emat"
+   }
+  }
+ }
+}

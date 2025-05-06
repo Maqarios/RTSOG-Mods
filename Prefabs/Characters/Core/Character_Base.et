@@ -1,0 +1,19 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    SCR_MorphineUserAction "{6511176FA9DB16F9}" {
+     ParentContextList {
+      "RightArm" "LeftArm" "RightLeg" "LeftLeg"
+     }
+     UIInfo UIInfo "{6511176F3DC65742}" {
+      Name "Inject KUK"
+     }
+     ActionTitle "Inject KUK"
+     m_eConsumableType RTSOG_KnockUnKnock
+    }
+   }
+  }
+ }
+}

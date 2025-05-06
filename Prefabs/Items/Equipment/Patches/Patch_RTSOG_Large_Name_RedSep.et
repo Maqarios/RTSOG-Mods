@@ -1,0 +1,29 @@
+GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_Anderson.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Talon - Large - RedSep"
+     Description "RTSOG - RedSep"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{64D92AEB5E662878}" {
+     SourceMaterial "rhs_patch_usmc_id_1"
+     AssignedMaterial "{2665DB767D0EBAB2}Assets/Characters/Patches/Talons/Sep/Material.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{2665DB767D0EBAB2}Assets/Characters/Patches/Talons/Sep/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{2665DB767D0EBAB2}Assets/Characters/Patches/Talons/Sep/Material.emat"
+   }
+  }
+ }
+}

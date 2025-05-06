@@ -1,0 +1,20 @@
+GenericEntity : "{77931A76049826D6}Prefabs/Weapons/Magazines/PmagUnwindowed/Magazine_556x45_PMAG_30rnd_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "#RHS-Magazine_Pmag_Name"
+     Description "Cracked"
+    }
+   }
+   WeightPerAmmo 0.006
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    m_eAmmoTypeFlags FMJ
+   }
+   AmmoConfig "{BDC6A9010D22D580}Configs/Weapons/Ammo/Ammo_RTSOG_556x45.conf"
+  }
+ }
+}

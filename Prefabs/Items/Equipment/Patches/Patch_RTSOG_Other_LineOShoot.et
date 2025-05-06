@@ -1,0 +1,29 @@
+GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_Anderson.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Line O Shoot"
+     Description "RTSOG - Line O Shoot"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{64DD4CA1077738FA}" {
+     SourceMaterial "rhs_patch_usmc_id_1"
+     AssignedMaterial "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+   }
+   ItemMaterialsOverride {
+    "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+   }
+  }
+ }
+}

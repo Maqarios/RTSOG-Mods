@@ -1,0 +1,8 @@
+MatPBRBasic : "{2665DB767D0EBAB1}Assets/Characters/Patches/data/rhs_patch_usmc_id_1.emat" {
+ DiffuseIBL 0.223 0.223 0.223 1
+ SpecularIBL 0.223 0.223 0.223 1
+ Diffuse 0.223 0.223 0.223 1
+ Specular 0.223 0.223 0.223 1
+ BCRMap "{00E983A5BA5169BB}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_MyRoom_BCR.edds"
+ NMOMap "{3831383763263B3D}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_MyRoom_NMO.edds"
+}

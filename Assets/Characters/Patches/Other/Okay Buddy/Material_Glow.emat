@@ -1,0 +1,12 @@
+MatPBRBasic : "{2665DB767D0EBAB1}Assets/Characters/Patches/data/rhs_patch_usmc_id_1.emat" {
+ DiffuseIBL 0.223 0.223 0.223 1
+ SpecularIBL 0.223 0.223 0.223 1
+ Diffuse 0.223 0.223 0.223 1
+ Emissive 0.061 0.061 0.061 0
+ EmissiveAbsoluteLV 0
+ ApplyAlbedoToEmissive 1
+ Specular 0.223 0.223 0.223 1
+ EmissiveMap "{824EF8AE12AE3B4E}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_OkayBuddy_EMI.edds"
+ BCRMap "{00E983A5BA5169BD}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_OkayBuddy_BCR.edds"
+ NMOMap "{3831383763263B3F}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_OkayBuddy_NMO.edds"
+}

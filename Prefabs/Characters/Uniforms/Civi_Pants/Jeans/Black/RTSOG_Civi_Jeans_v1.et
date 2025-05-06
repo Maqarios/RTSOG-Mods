@@ -1,0 +1,49 @@
+GameEntity : "{E6534FE720EB128F}Prefabs/Characters/Uniforms/BDU_Pants/bdu_pants_base.et" {
+ ID "5104869D194C6243"
+ components {
+  MeshObject "{5104869D194C6262}" {
+   Object "{159968CF7E37D9B4}Assets/Characters/Uniforms/Civi_Pants/RHS_jeans_item.xob"
+   Materials {
+    MaterialAssignClass "{6530FD9D880DAD6B}" {
+     SourceMaterial "RHS_Jeans"
+     AssignedMaterial "{C297F8188EF1AB35}Assets/Characters/Uniforms/Civi_Pants/Jeans/Black/Material.emat"
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{64D170D788CAE762}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{64D170D78B4EF7E5}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{64D170D7855DBEE0}" {
+      m_AffiliatedFactionKey "RHS_ION"
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Black Jeans"
+     Description ""
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewModel "{D221E00C626AE042}Prefabs/Characters/Uniforms/Civi_Pants/Jeans/Black/preview/RTSOG_Civi_jeans_black.et"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornModel "{FCFE9116E68B9A04}Assets/Characters/Uniforms/Civi_Pants/RHS_jeans.xob"
+   WornMaterialsOverride {
+    "{C297F8188EF1AB35}Assets/Characters/Uniforms/Civi_Pants/Jeans/Black/Material.emat"
+   }
+   ItemModel "{159968CF7E37D9B4}Assets/Characters/Uniforms/Civi_Pants/RHS_jeans_item.xob"
+   ItemMaterialsOverride {
+    "{C297F8188EF1AB35}Assets/Characters/Uniforms/Civi_Pants/Jeans/Black/Material.emat"
+   }
+   OverrideMeshesToHide {
+    "Leg_R" "Leg_L" "Groin" "Calf_L" "Calf_R" "CalfLower_L" "CalfLower_R"
+   }
+  }
+ }
+}

@@ -1,0 +1,5 @@
+MatPBRBasic : "{69143038095E0D4B}Assets/Characters/Patches/data/rhs_patch_ru_big_left.emat" {
+ BCRMap "{00E983A5BA5169C4}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndGold_BCR.edds"
+ OpacityMap "{8F095EEBD97DB5E1}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndGold_OPA.edds"
+ NMOMap "{3831383763263B45}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndGold_NMO.edds"
+}

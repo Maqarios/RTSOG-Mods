@@ -1,0 +1,12 @@
+MatPBRBasic : "{89E511B305815BB0}Assets/Characters/Patches/data/patch_ru_reflective.emat" {
+ DiffuseIBL 0.078 0.078 0.078 1
+ SpecularIBL 0.078 0.078 0.078 1
+ Diffuse 0.078 0.078 0.078 1
+ Emissive 0 0.251 0.251 1
+ EmissiveLV 0.235
+ ApplyAlbedoToEmissive 1
+ Specular 0.078 0.078 0.078 1
+ EmissiveMap "{6773BDA8DC1667E6}Assets/Characters/Patches/Talons/May-Day/Small/data/EMI.edds"
+ BCRMap "{E5D4C6A374E9350B}Assets/Characters/Patches/Talons/May-Day/Small/data/BCR.edds"
+ NMOMap "{DD0C7D31AD9E6795}Assets/Characters/Patches/Talons/May-Day/Small/data/NMO.edds"
+}

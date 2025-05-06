@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "6532CA19AE988512"
+ components {
+  MeshObject "{6532CA19AE98851B}" {
+   Object "{53B3DF0F8D957412}Assets/Characters/Uniforms/T_Shirts/T_Shirt_v2/T_Shirt_v2_RHS.xob"
+   Materials {
+    MaterialAssignClass "{6532CA194A71F325}" {
+     SourceMaterial "low"
+     AssignedMaterial "{9A7504B5E65A1F77}Assets/Characters/Uniforms/T_Shirts/Red Section/Tucked/Material.emat"
+    }
+   }
+  }
+ }
+ coords 3.476 4.123 0.142
+}

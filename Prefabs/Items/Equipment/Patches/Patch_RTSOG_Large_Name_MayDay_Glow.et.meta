@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CCA5D21CD504A7F1}Prefabs/Items/Equipment/Patches/Patch_RTSOG_Name_MayDay_Glow.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

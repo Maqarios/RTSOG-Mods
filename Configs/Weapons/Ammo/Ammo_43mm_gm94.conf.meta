@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4584069DFCC8ADF8}Configs/Weapons/Ammo/Ammo_43mm_gm94.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

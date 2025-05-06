@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D6353F4DE185FECC}Prefabs/Weapons/Magazines/Magazine_RTSOG_545x39_AK_30rnd_ALL.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

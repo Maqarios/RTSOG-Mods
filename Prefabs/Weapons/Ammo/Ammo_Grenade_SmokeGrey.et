@@ -1,0 +1,38 @@
+Projectile : "{01B131367501020F}Prefabs/Weapons/Ammo/Ammo_Grenade_VGM93_Base.et" {
+ ID "50C6F965BA00F9FA"
+ components {
+  CollisionTriggerComponent "{624D26DA9B55CA12}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{624D26DA9B55CA7C}" {
+     Enabled 0
+     EffectPrefab "{98248904E0CF3CB4}Prefabs/Weapons/Warheads/Warhead_Grenade_Thermobaric_VGM93100.et"
+     ParticleEffect "{A02C081C6D81D70D}Particles/Weapons/Explosion_TBG7V.ptc"
+    }
+    AIExplosionEffect "{624D26DA9B55CA40}" {
+     Enabled 0
+    }
+    SpawnParticleEffect "{64F2675324DAEC98}" {
+     UseFrameEvent 1
+     ParticleEffect "{D9E301D28125234A}Particles/Weapon/Smoke_grenade_AN-M8_HC.ptc"
+    }
+   }
+   SafetyDistance 0
+  }
+  InventoryItemComponent "{52627A12350994B6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1234AD20A4}" {
+    ItemDisplayName UIInfo "{624D26DA9B55CA50}" {
+     Name "40mm Smoke - Grey"
+     Description "40mm Smoke - Grey"
+    }
+   }
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Materials {
+    MaterialAssignClass "{64F26753155898CD}" {
+     SourceMaterial "GM94_casing"
+     AssignedMaterial "{18A69D430A63F5E8}Assets/Weapons/GrenadeLaunchers/gm94/Data/vgm93_100.emat"
+    }
+   }
+  }
+ }
+}

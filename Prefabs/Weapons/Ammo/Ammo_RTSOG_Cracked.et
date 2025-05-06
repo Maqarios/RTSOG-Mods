@@ -1,0 +1,18 @@
+Projectile : "{9CE4CC890A2A574F}Prefabs/Weapons/Ammo/Ammo_556x45_Ball_M193.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   InitSpeed 2000
+   Mass 1
+   ProjectileEffects {
+    ProjectileDamage "{5168BBF3DBD79134}" {
+     DamageValue 150
+     DamageType True
+    }
+   }
+   AirDrag 0
+   PenetrationDepth 20
+   PenetrationSpeed 1500
+  }
+ }
+}

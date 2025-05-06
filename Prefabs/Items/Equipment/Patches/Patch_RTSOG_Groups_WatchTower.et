@@ -1,0 +1,29 @@
+GameEntity : "{2E2721DB0A4FB249}Prefabs/Items/Equipment/Patches/Patch_RU_Berlinskaya_Large.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Groups - Watch Tower"
+     Description "RTSOG - Logo - Large - Red and Black - Glow"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{64F2C05DF0DF1654}" {
+     SourceMaterial "03"
+     AssignedMaterial "{0335FB13A57D559D}Assets/Characters/Patches/Groups/Watch Tower/Material.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{0335FB13A57D559D}Assets/Characters/Patches/Groups/Watch Tower/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{0335FB13A57D559D}Assets/Characters/Patches/Groups/Watch Tower/Material.emat"
+   }
+  }
+ }
+}

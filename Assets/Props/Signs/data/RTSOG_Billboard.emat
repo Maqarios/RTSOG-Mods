@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Emissive 0.205 0.205 0.205 0
+ EmissiveAbsoluteLV 0
+ ApplyAlbedoToEmissive 1
+ BCRMap "{43796FBC0232A4E3}Assets/Props/Signs/data/RTSOG Banner.edds"
+ GlobalMapsUVTransform MatUVTransform "{633158F06BC3253E}" {
+ }
+}

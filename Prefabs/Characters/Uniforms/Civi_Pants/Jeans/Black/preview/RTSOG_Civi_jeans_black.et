@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "6530FD9E3460DA9B"
+ components {
+  MeshObject "{6530FD9E3460DAA5}" {
+   Object "{FCFE9116E68B9A04}Assets/Characters/Uniforms/Civi_Pants/RHS_jeans.xob"
+   Materials {
+    MaterialAssignClass "{6530FD9E7B8BED06}" {
+     SourceMaterial "RHS_Jeans"
+     AssignedMaterial "{C297F8188EF1AB35}Assets/Characters/Uniforms/Civi_Pants/Jeans/Black/Material.emat"
+    }
+   }
+  }
+ }
+ coords 953.084 7 713.057
+}

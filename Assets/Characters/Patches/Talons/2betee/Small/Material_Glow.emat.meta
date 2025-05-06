@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{AA099218345FF243}Assets/Characters/Patches/Talons/2betee/Normal/Material_Glow.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

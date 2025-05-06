@@ -1,0 +1,17 @@
+GenericEntity : "{1F6DC70B4798A3B4}Prefabs/Weapons/Magazines/6l23_plastic/Magazine_545x39_plastic_AK_30rnd_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "#RHS-Magazine_6L23_Plastic_Name"
+     Description "Cracked"
+    }
+   }
+   WeightPerAmmo 0.005
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   AmmoConfig "{BDC6A9010D22D580}Configs/Weapons/Ammo/Ammo_RTSOG.conf"
+  }
+ }
+}

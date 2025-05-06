@@ -1,0 +1,5 @@
+RHS_LightEntity : "{2CBEB20ED36BE43E}Prefabs/Items/Equipment/Nightvision/PVS14/NVG_Light_GP_light.et" {
+ ID "0000000000000001"
+ Color 1 0 0 0
+ m_cLightColor 1 0 0 0
+}

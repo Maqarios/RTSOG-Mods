@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0335FB13A57D559E}Assets/Characters/Patches/Logo/Red and Black/Large/Material2.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

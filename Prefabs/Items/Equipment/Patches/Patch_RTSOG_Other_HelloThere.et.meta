@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A565F40A92F6EFA9}Prefabs/Items/Equipment/Patches/Patch_RTSOG_Other_HelloThere.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

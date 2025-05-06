@@ -1,0 +1,9 @@
+MatPBRBasic : "{69143038095E0D4B}Assets/Characters/Patches/data/rhs_patch_ru_big_left.emat" {
+ Emissive 0.127 0.127 0.127 0
+ EmissiveAbsoluteLV 0
+ ApplyAlbedoToEmissive 1
+ EmissiveMap "{824EF8AE12AE3B4C}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_EMI.edds"
+ BCRMap "{00E983A5BA5169C1}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_BCR.edds"
+ OpacityMap "{8F095EEBD97DB5E0}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_OPA.edds"
+ NMOMap "{3831383763263B43}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_NMO.edds"
+}

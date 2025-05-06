@@ -1,0 +1,34 @@
+GameEntity : "{74CE423A2EF162C5}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/ION_Shirt_base.et" {
+ ID "5104869D194C6243"
+ components {
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{6532CA1DC2429F06}" {
+     SourceMaterial "rhs_ion_casual_shirt"
+     AssignedMaterial "{8A6BBCA37EBB34F7}Assets/Characters/Uniforms/T_Shirts/Red Section/Normal/Material.emat"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Shirt - Red Section"
+     Description ""
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewModel "{7D29EA185C5CC01E}Prefabs/Characters/Uniforms/T_Shirts/Red Section/preview/RTSOG_Casual_Shirt_RedSection_wear.et"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{8A6BBCA37EBB34F7}Assets/Characters/Uniforms/T_Shirts/Red Section/Normal/Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{8A6BBCA37EBB34F7}Assets/Characters/Uniforms/T_Shirts/Red Section/Normal/Material.emat"
+   }
+  }
+ }
+}

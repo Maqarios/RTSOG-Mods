@@ -1,0 +1,15 @@
+GenericEntity {
+ ID "6530D003D640D2F9"
+ components {
+  MeshObject "{6530D003D640D2E3}" {
+   Object "{1D2351F85CFA11F5}Assets/Characters/Uniforms/T_Shirts/Shirt_ION/rhs_ion_casual_shirt.xob"
+   Materials {
+    MaterialAssignClass "{6532CA1CD3C940FD}" {
+     SourceMaterial "rhs_ion_casual_shirt"
+     AssignedMaterial "{8A6BBCA37EBB34F7}Assets/Characters/Uniforms/T_Shirts/Red Section/Normal/Material.emat"
+    }
+   }
+  }
+ }
+ coords 3.476 4.123 0.142
+}

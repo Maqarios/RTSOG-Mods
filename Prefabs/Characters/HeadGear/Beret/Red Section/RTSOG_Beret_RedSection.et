@@ -1,0 +1,27 @@
+GameEntity : "{D4BC1F7EC5C290A3}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_01_base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D6017C371EA6}" {
+    ItemDisplayName UIInfo "{52C8D60173B1164A}" {
+     Name "Beret - Red Section"
+     Description "Beret - Red Section"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{52C8D6017161AECA}" {
+     SizeSetupStrategy Manual
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{0A5F1758388B84BC}Assets/Characters/HeadGear/Beret/Beret.xob"
+   WornMaterialsOverride {
+    "{0E2BCC1355F5E680}Assets/Characters/HeadGear/Beret/Red Section/Material.emat"
+   }
+   ItemModel "{B2CDEEB76C66D306}Assets/Characters/HeadGear/Beret/Beret_item.xob"
+   ItemMaterialsOverride {
+    "{0E2BCC1355F5E680}Assets/Characters/HeadGear/Beret/Red Section/Material.emat"
+   }
+  }
+ }
+ coords -0.573 0.018 -0.103
+}

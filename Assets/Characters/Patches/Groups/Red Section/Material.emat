@@ -1,0 +1,13 @@
+MatPBRBasic {
+ Color 0.392 0.392 0.392 1
+ DiffuseIBL 0.588 0.588 0.588 1
+ SpecularIBL 0.588 0.588 0.588 1
+ Diffuse 0.588 0.588 0.588 1
+ Specular 0.588 0.588 0.588 1
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{82F1F13998A2592A}Assets/Characters/Patches/Groups/Red Section/data/BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NormalPower 4
+ NMOMap "{BA294AAB41D50BB4}Assets/Characters/Patches/Groups/Red Section/data/NMO.edds"
+}

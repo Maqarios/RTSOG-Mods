@@ -1,0 +1,31 @@
+GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Reflective.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Talon - Small - 2betee - Glow"
+     Description "RTSOG - Talon - Small - 2betee - Glow"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{650E6E2156C0B83C}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{AA099218345FF243}Assets/Characters/Patches/Talons/2betee/Small/Material_Glow.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{AA099218345FF243}Assets/Characters/Patches/Talons/2betee/Small/Material_Glow.emat"
+   }
+   ItemMaterialsOverride {
+    "{AA099218345FF243}Assets/Characters/Patches/Talons/2betee/Small/Material_Glow.emat"
+   }
+  }
+ }
+ coords 0 0 -0.045
+ angleY 63.84
+}
