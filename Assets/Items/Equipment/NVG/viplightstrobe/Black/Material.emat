@@ -1,0 +1,8 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ RoughnessScale 0.5
+ MetalnessScale 2
+ BCRMap "{0B1F3907B199C5FF}Assets/Items/Equipment/NVG/viplightstrobe/Black/Data/BCR.edds"
+ NMOMap "{63E59B42E545EB73}Assets/Items/Equipment/NVG/viplightstrobe/Data/vip_tan_NMO.edds"
+}

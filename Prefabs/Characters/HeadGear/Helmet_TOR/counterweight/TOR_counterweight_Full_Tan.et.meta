@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{69A6E58748CD3D3A}Prefabs/Characters/HeadGear/Helmet_TOR/counterweight/TOR_counterweight_Full_Tan.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

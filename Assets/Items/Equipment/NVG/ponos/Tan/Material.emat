@@ -1,0 +1,10 @@
+MatPBRBasic {
+ Color 0.239 0.23 0.219 1
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ RoughnessScale 0.5
+ MetalnessScale 2
+ BCRMap "{FD1CC72006F8BC03}Assets/Items/Equipment/NVG/ponos/Tan/Data/BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{BF5CAEB9495C5FDA}Assets/Items/Equipment/NVG/ponos/Data/ponos_NMO.edds"
+}

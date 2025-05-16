@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0.208 0.178 0.143 1
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{B4AEC87E9C7E9BF5}Assets/Characters/HeadGear/Helmet_TOR/Tan/Data/BCR.edds"
+ NMOMap "{63343435A3A3D1B7}Assets/Characters/HeadGear/Helmet_TOR/Data/counterweight/Data/tor_counterweight_NMO.edds"
+}
