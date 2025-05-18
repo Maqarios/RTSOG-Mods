@@ -25,24 +25,26 @@ modded class SCR_VotingManagerComponent {
 		
 		if (type == EVotingType.EDITOR_IN || type == EVotingType.EDITOR_OUT || type == EVotingType.EDITOR_WITHDRAW) {
 			// Get allowed groups
+			array<string> certifiedGMs;
 			array<string> chalkTeam;
 			array<string> redSection;
 			array<string> greySection;
 			array<string> blackSection;
 			array<string> redTalon;
-			RTSOGMods.GetGroupsPlayersLists(chalkTeam, redSection, greySection, blackSection, redTalon);
+			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
 			
 			// Get player BI identifier
 			string playerEID = RTSOGMods.GetPlayerEID(value);
 			
 			// Check if player is allowed in the group
+			bool isCertifiedGM = certifiedGMs.Contains(playerEID);
 			bool isChalkTeam = chalkTeam.Contains(playerEID);
 			bool isRedSection = redSection.Contains(playerEID);
 			bool isGreySection = greySection.Contains(playerEID);
 			bool isBlackSection = blackSection.Contains(playerEID);
 			bool isRedTalon = redTalon.Contains(playerEID);
 			
-			if  (isRedTalon) {
+			if  (isCertifiedGM || isRedTalon) {
 				super.EndVoting(voting, outcome);
 			}
 		} else {
