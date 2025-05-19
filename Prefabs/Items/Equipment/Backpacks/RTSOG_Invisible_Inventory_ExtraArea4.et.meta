@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CD86C5C2DAB3EC51}Prefabs/Items/Equipment/Backpacks/RTSOG_Invisible_Inventory_ExtraArea4.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
