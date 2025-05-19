@@ -10,14 +10,15 @@ modded class SCR_GroupsManagerComponent {
 		string playerEID = RTSOGMods.GetPlayerEID(playerID);
 
 		// Get groups whitelist
+		array<string> certifiedGMs;
 		array<string> chalkTeam;
 		array<string> redSection;
 		array<string> greySection;
 		array<string> blackSection;
 		array<string> redTalon;
-		GetGroupsPlayersLists(chalkTeam, redSection, greySection, blackSection, redTalon);
+		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
 		
-		if (group.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, chalkTeam, redSection, greySection, blackSection, redTalon))
+		if (group.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon))
 			return -1;
 		
 		group.AddPlayer(playerID);
@@ -41,14 +42,15 @@ modded class SCR_GroupsManagerComponent {
 			string groupName = newGroup.GetCustomName();
 			
 			// Get groups whitelist
+			array<string> certifiedGMs;
 			array<string> chalkTeam;
 			array<string> redSection;
 			array<string> greySection;
 			array<string> blackSection;
 			array<string> redTalon;
+			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
 			
-			GetGroupsPlayersLists(chalkTeam, redSection, greySection, blackSection, redTalon);
-			if (newGroup.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, chalkTeam, redSection, greySection, blackSection, redTalon))
+			if (newGroup.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon))
 			{
 				m_iMovingPlayerToGroupID = -1;
 				return -1;
@@ -65,29 +67,9 @@ modded class SCR_GroupsManagerComponent {
 		}
 	}
 	
-	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
-	void GetGroupsPlayersLists(out array<string> chalkTeam, out array<string> redSection, out array<string> greySection, out array<string> blackSection, out array<string> redTalon) {
-		if(!Replication.IsServer()) return;
-
-	    RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
-		
-		chalkTeam = whitelist.chalkTeam;
-		redSection = whitelist.redSection;
-		greySection = whitelist.greySection;
-		blackSection = whitelist.blackSection;
-		redTalon = whitelist.redTalon;
-	}
-	
-	bool isPlayerAllowedInGroup(string groupName, string playerEID, array<string> chalkTeam, array<string> redSection, array<string> greySection, array<string> blackSection, array<string> redTalon) {
-		PrintFormat("RTSOG_GroupsManagerComponent | Player EID: %1", playerEID, level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Group Name: %1", groupName, level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Chalk Team: %1", chalkTeam.ToString(), level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Red Section: %1", redSection.ToString(), level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Grey Section: %1", greySection.ToString(), level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Black Section: %1", blackSection.ToString(), level: LogLevel.DEBUG);
-		PrintFormat("RTSOG_GroupsManagerComponent | Red Talon: %1", redTalon.ToString(), level: LogLevel.DEBUG);
-		
+	bool isPlayerAllowedInGroup(string groupName, string playerEID, array<string> certifiedGMs, array<string> chalkTeam, array<string> redSection, array<string> greySection, array<string> blackSection, array<string> redTalon) {
 		// Check if player is allowed in the group
+		bool isCertifiedGM = certifiedGMs.Contains(playerEID);
 		bool isChalkTeam = chalkTeam.Contains(playerEID);
 		bool isRedSection = redSection.Contains(playerEID);
 		bool isGreySection = greySection.Contains(playerEID);
@@ -97,15 +79,10 @@ modded class SCR_GroupsManagerComponent {
 		if (isRedTalon)
 			return true;
 		
-		// To be removed
-		if (groupName == "Red Talon")
-			return false;
-		return true;
-		
 		if(groupName == "Green Team")
 			return true;
 		
-		if(groupName == "Chalk Team" && (isChalkTeam || isRedSection || isGreySection || isBlackSection))
+		if(groupName == "Chalk Team" && isChalkTeam)
 			return true;
 		
 		if(groupName == "Red Section" && isRedSection)
@@ -115,6 +92,14 @@ modded class SCR_GroupsManagerComponent {
 			return true;
 		
 		if(groupName == "Black Section" && isBlackSection)
+			return true;
+		
+		if(groupName == "Watch Tower" && isCertifiedGM)
+			return true;
+		
+		array<string> predefinedGroups = new array<string>();
+		predefinedGroups = {"Green Team", "Chalk Team", "Red Section", "Grey Section", "Black Section", "Red Talon", "Watch Tower"};
+		if(!predefinedGroups.Contains(groupName))
 			return true;
 		
 		return false;

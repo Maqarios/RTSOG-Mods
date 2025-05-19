@@ -1,15 +1,15 @@
-GenericEntity : "{282D760432F2CDB6}Prefabs/Items/Equipment/Backpacks/RTSOG_Invisible_Inventory_Backpack.et" {
+GenericEntity : "{282D760432F2CDB6}Prefabs/Items/Equipment/Backpacks/RTSOG_Invisible_Inventory_BackpackArea.et" {
  ID "511E9C6ADE70F798"
  components {
   SCR_UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
    Attributes SCR_ItemAttributeCollection "{5222CB039E9715D1}" {
     ItemDisplayName UIInfo "{5222CB03904B414C}" {
-     Name "Invisible Inventory (Extra Area)"
+     Name "Invisible Inventory (Extra Area 6)"
     }
    }
   }
   BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
-   AreaType ZEL_ExtraArea "{5A6ABD3858A95CBE}" {
+   AreaType ZEL_ExtraArea6 "{5A6ABD3858A95CBE}" {
    }
   }
  }
