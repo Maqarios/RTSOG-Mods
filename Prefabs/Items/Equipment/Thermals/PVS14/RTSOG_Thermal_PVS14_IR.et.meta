@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8A7DE1D85466FFBF}Prefabs/Items/Equipment/Thermals/PATROL_IR/RTSOG_Thermal_PVS14_IR.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
