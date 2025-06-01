@@ -45,5 +45,12 @@ GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/Arsena
     }
    }
   }
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   additionalActions {
+    SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
+     Duration 1.5
+    }
+   }
+  }
  }
 }
