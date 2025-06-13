@@ -1,0 +1,29 @@
+GameEntity : "{B396C90971A6A218}Prefabs/Items/Equipment/Patches/Numbers/Patch_RTSOG_Numbers_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Numbers - 1-9 - Tan"
+     Description ""
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{659852858812AA36}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{8E0792B96318F1E0}Assets/Characters/Patches/Numbers/1_9/Material_Tan.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{8E0792B96318F1E0}Assets/Characters/Patches/Numbers/1_9/Material_Tan.emat"
+   }
+   ItemMaterialsOverride {
+    "{8E0792B96318F1E0}Assets/Characters/Patches/Numbers/1_9/Material_Tan.emat"
+   }
+  }
+ }
+}

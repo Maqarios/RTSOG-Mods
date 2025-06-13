@@ -1,0 +1,4 @@
+MatPBRBasic : "{4452703E26DD6534}Assets/Characters/Patches/Numbers/Material_Base.emat" {
+ BCRMap "{20A9ED95701F7249}Assets/Characters/Patches/Numbers/1_3/data/BCR_ODGreen.edds"
+ NMOMap "{2C67FAF2D78B4C94}Assets/Characters/Patches/Numbers/1_3/data/NMO.edds"
+}

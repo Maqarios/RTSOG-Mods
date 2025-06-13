@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{632E9C521EF812B5}Assets/Characters/Patches/Numbers/1_8/Material_ODGreen.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{41BAE43D72C1BD37}Prefabs/Items/Equipment/Patches/Numbers/Patch_RTSOG_Numbers_1_3_MC.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

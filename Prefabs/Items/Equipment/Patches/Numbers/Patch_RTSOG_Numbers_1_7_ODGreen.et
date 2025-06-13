@@ -1,0 +1,29 @@
+GameEntity : "{B396C90971A6A218}Prefabs/Items/Equipment/Patches/Numbers/Patch_RTSOG_Numbers_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Numbers - 1-7 - OD Green"
+     Description ""
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{65985282FFA5F201}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{D7DB2850554BF08F}Assets/Characters/Patches/Numbers/1_7/Material_ODGreen.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{D7DB2850554BF08F}Assets/Characters/Patches/Numbers/1_7/Material_ODGreen.emat"
+   }
+   ItemMaterialsOverride {
+    "{D7DB2850554BF08F}Assets/Characters/Patches/Numbers/1_7/Material_ODGreen.emat"
+   }
+  }
+ }
+}

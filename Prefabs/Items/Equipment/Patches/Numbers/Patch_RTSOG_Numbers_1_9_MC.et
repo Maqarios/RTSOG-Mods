@@ -1,0 +1,29 @@
+GameEntity : "{B396C90971A6A218}Prefabs/Items/Equipment/Patches/Numbers/Patch_RTSOG_Numbers_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "RTSOG - Numbers - 1-9 - MC"
+     Description ""
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Materials {
+    MaterialAssignClass "{65985282692E54DA}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{A48B1658ACEE74FF}Assets/Characters/Patches/Numbers/1_9/Material_MC.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{A48B1658ACEE74FF}Assets/Characters/Patches/Numbers/1_9/Material_MC.emat"
+   }
+   ItemMaterialsOverride {
+    "{A48B1658ACEE74FF}Assets/Characters/Patches/Numbers/1_9/Material_MC.emat"
+   }
+  }
+ }
+}
