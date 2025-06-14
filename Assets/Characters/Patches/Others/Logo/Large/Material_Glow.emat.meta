@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0377431AF7977C36}Assets/Characters/Patches/Other/Red and Black/Large/Material_Glow.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

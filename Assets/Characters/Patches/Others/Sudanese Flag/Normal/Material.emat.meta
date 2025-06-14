@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{AC0903E7ECC89900}Assets/Characters/Patches/Other/Sudanese Flag/Normal/Material.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}
