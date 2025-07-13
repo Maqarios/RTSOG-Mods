@@ -1,0 +1,122 @@
+GenericEntity : "{89FAE23A65BBB46D}Prefabs/Props/Military/CISS/SupplyDrop/Parts/US/EquipmentBox_US.et" {
+ ID "63032425024EBE27"
+ components {
+  RTSOGLimited_ArsenalComponent "{65DB14FAA30E752D}" {
+   m_eSupportedArsenalItemTypes 263038
+   m_eSupportedArsenalItemModes 18
+   m_bGetDefaultIfNoFaction 0
+   m_eArsenalTypes GADGETS
+  }
+  SCR_ResourceComponent "{65DB14F19B761E0E}" {
+   m_aConsumers {
+    SCR_ResourceConsumer "{65DB14F1F28F84CA}" : "{68639073C2937EE6}Configs/Resources/Supplies/Consumers/Generic/Consumer_Gadget.conf" {
+    }
+   }
+  }
+  SCR_ResupplySupportStationComponent "{65DB14FF65D72749}" {
+   m_eSupplyCostType GADGET_ARSENAL
+  }
+  SCR_SupportStationGadgetComponent "{65DB14FF282786E7}" {
+   m_eAnimVariable ADRIANOV
+   m_bCanBeHeld 0
+   m_aSupportStationTypes {
+    400 401
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{612AE13AABBEE866}" {
+   MultiSlots {
+    MultiSlotConfiguration "{612AE13B54E1CE4B}" {
+     SlotTemplate InventoryStorageSlot s1 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13C78A42DC5}" {
+     SlotTemplate InventoryStorageSlot s2 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13C63EDEC18}" {
+     SlotTemplate InventoryStorageSlot s3 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13C605F9CBE}" {
+     SlotTemplate InventoryStorageSlot s4 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13C60470D74}" {
+     SlotTemplate InventoryStorageSlot s5 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13C60298A64}" {
+     SlotTemplate InventoryStorageSlot s6 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13CF45ED1DE}" {
+     SlotTemplate InventoryStorageSlot s7 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13CF26F988D}" {
+     SlotTemplate InventoryStorageSlot s8 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13CF2F54B36}" {
+     SlotTemplate InventoryStorageSlot s9 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13CF008ECDC}" {
+     SlotTemplate InventoryStorageSlot s10 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13CA1B98DD7}" {
+     SlotTemplate InventoryStorageSlot s11 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13D6C37582B}" {
+     SlotTemplate InventoryStorageSlot s12 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13D5315E0FF}" {
+     SlotTemplate InventoryStorageSlot s13 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13D42BCFB89}" {
+     SlotTemplate InventoryStorageSlot s14 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13D2E06A321}" {
+     SlotTemplate InventoryStorageSlot s15 {
+      Enabled 0
+     }
+    }
+    MultiSlotConfiguration "{612AE13D08FBC22F}" {
+     SlotTemplate InventoryStorageSlot s16 {
+      Enabled 0
+     }
+    }
+   }
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{65DB14FEBB1FE1AE}" {
+  }
+  ActionsManagerComponent "{612AE13B25F68085}" {
+   additionalActions {
+    SCR_OpenStorageAction "{612AE13BFE191B2D}" {
+     UIInfo SCR_ActionUIInfo "{632287EB6EC3F046}" {
+      Name "Open Supply"
+     }
+    }
+   }
+  }
+ }
+}
