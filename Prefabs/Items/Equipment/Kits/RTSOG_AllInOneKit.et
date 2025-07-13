@@ -1,0 +1,185 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "#AR-Item_MedicalKit_Name"
+     Description "#AR-Item_MedicalKit_Description"
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{65DB14E82CC40562}" {
+       Name "#AR-Item_SupplyConsumer_Hint1"
+       Icon "{8EB808BFA227C080}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesStored.edds"
+      }
+      SCR_InventoryItemHintUIInfo "{65DB14E82CC4059B}" {
+       Name "#AR-Item_MedicalKit_Hint1"
+      }
+      SCR_InventoryItemHintUIInfo "{65DB14E82CC40587}" {
+       Name "#AR-Item_MedicalKit_Hint2"
+      }
+      SCR_InventoryItemHintUIInfo "{65DB14E82CC40582}" {
+       Name "#AR-Item_MedicalKit_Hint3"
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 1
+     SizeSetupStrategy Manual
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{65DB14E82CC40588}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{65DB14E82CC405B2}" {
+       AnimGraph "{44A1E0130301E5F5}Assets/Items/Equipment/workspaces/MedicalKit_supplies.agr"
+       AnimInstance "{A9CBB5C81F08B71B}Assets/Items/Equipment/workspaces/MedicalKit_supplies.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65DB14E82CC405B9}" {
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 0.325
+     }
+     CharacterModifierAttributes "{65DB14E82CC405A5}" {
+      SpeedLimit 9999
+      ADSSpeedLimit 9999
+      SpeedLimitItemPrimaryAction 9999
+      SpeedLimitHighready 9999
+      Supress1hShooting 1
+      AllowGadgetUse 1
+     }
+    }
+    m_Size SLOT_2x2
+    m_eQuickSlotSize SLOT_1x1
+    m_SlotType SLOT_GADGETS_STORAGE
+   }
+  }
+  MeshObject "{65DB14E82CC405D6}" {
+   Object "{79CA5DD14C0940E9}Assets/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01.xob"
+   Materials {
+    MaterialAssignClass "{65DB14F9DAE4D59C}" {
+     SourceMaterial "MedicalKit_01"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+    }
+    MaterialAssignClass "{65DB14F9DAE4D5A7}" {
+     SourceMaterial "MedicalKit_01_MLOD"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+    }
+    MaterialAssignClass "{65DB14F9DAE4D5A1}" {
+     SourceMaterial "decals_logo"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+    }
+   }
+   InheritVisibility 1
+  }
+  RTSOGUnlimited_ArsenalComponent "{65DB14E82CC405DA}" {
+   m_eSupplyCostType GADGET_ARSENAL
+   m_eSupportedArsenalItemTypes 262526
+   m_eSupportedArsenalItemModes 50
+   m_eEditableAttributeGroups 0
+   m_bGetDefaultIfNoFaction 0
+   m_eArsenalTypes GADGETS
+  }
+  RigidBody "{65DB14E82CC405DF}" {
+   ModelGeometry 1
+  }
+  SCR_ResourceComponent "{65DB14E82CC405C0}" {
+   m_aConsumers {
+    SCR_ResourceConsumer "{5E4EDEA541710E5E}" : "{68639073C2937EE6}Configs/Resources/Supplies/Consumers/Generic/Consumer_Gadget.conf" {
+    }
+   }
+  }
+  SCR_ResupplySupportStationComponent "{65DB14E16982160F}" {
+   m_sOnUseSoundEffectFile "{7BACA57AF41F033D}Sounds/SupportStations/SupportStations_Character.acp"
+   m_sOnUseSoundEffectEventName "SOUND_RESUPPLY_AMMUNITION_SELF"
+   m_eSupplyCostType GADGET_ARSENAL
+  }
+  SCR_SoundDataComponent "{5B18D20ED0099A17}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5B18D209080A5D15}" {
+     m_sSoundProject "{80AA85EEB39A28DF}Sounds/Items/_SharedData/PickUp/Items_PickUp_MedicKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{5B18D2091B885AE6}" {
+     m_sSoundProject "{80AA85EEB39A28DF}Sounds/Items/_SharedData/PickUp/Items_PickUp_MedicKit.acp"
+    }
+    SCR_AudioSourceConfiguration "{5B18D20930D9E274}" {
+     m_sSoundProject "{DF0D4A647CE68E77}Sounds/Items/_SharedData/Drop/Items_Drop_MedicKit.acp"
+    }
+   }
+  }
+  SCR_SupportStationGadgetComponent "{65DB14E82CC405ED}" {
+   m_eAnimVariable ADRIANOV
+   m_aSupportStationTypes {
+    401 400
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{65DB14E82CC405E9}" {
+   Attributes SCR_ItemAttributeCollection "{65DB14E82CC40614}" {
+    ItemDisplayName SCR_InventoryUIInfo "{65DB14E82CC40613}" {
+     Name "RTSOG All-In-One Kit"
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{5EA892822FE84A7E}" : "{020B1B6977455200}Configs/Inventory/ItemHints/GadgetSupplyAvailable_ItemHint.conf" {
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{65DB14E82CC4060E}" {
+     Weight 0
+     SizeSetupStrategy Manual
+     ItemDimensions 15 15 15
+     ItemVolume 3000
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{65DB14E82CC40608}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{65DB14E82CC40637}" {
+       AnimGraph "{44A1E0130301E5F5}Assets/Items/Equipment/workspaces/MedicalKit_supplies.agr"
+       AnimInstance "{A9CBB5C81F08B71B}Assets/Items/Equipment/workspaces/MedicalKit_supplies.asi"
+       BindingName "Gadget"
+      }
+     }
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65DB14E82CC40631}" {
+      CameraOrbitAngles -10 10 0
+      CameraDistanceToItem 0.325
+      LodModel 1
+     }
+     CharacterModifierAttributes "{65DB14E82CC4063D}" {
+      SpeedLimit 9999
+      ADSSpeedLimit 9999
+      SpeedLimitItemPrimaryAction 9999
+      SpeedLimitHighready 9999
+      Supress1hShooting 1
+      AllowGadgetUse 1
+     }
+    }
+    m_Size SLOT_2x2
+    m_eQuickSlotSize SLOT_1x1
+    m_SlotType SLOT_GADGETS_STORAGE
+    m_bStackable 0
+   }
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 0
+   MaxItemSize 0 0 0
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{65DB14E82CC40621}" {
+   Enabled 1
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    SCR_PickUpItemAction "{51EC842E3A187379}" {
+     "Sort Priority" -100
+    }
+    SCR_OpenStorageAction "{65DB14E82CC40628}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{65DB14E82CC40657}" {
+      Name "#AR-Inventory_OpenArsenalStorage"
+     }
+    }
+   }
+  }
+ }
+ coords 1224.4 51 1337.099
+}

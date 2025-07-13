@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}
