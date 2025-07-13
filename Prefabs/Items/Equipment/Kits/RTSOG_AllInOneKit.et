@@ -60,15 +60,15 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
    Materials {
     MaterialAssignClass "{65DB14F9DAE4D59C}" {
      SourceMaterial "MedicalKit_01"
-     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/AllInOneKit/Data/AllInOneKit.emat"
     }
     MaterialAssignClass "{65DB14F9DAE4D5A7}" {
      SourceMaterial "MedicalKit_01_MLOD"
-     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/AllInOneKit/Data/AllInOneKit.emat"
     }
     MaterialAssignClass "{65DB14F9DAE4D5A1}" {
      SourceMaterial "decals_logo"
-     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/MedicalKit_01/Data/AllInOneKit.emat"
+     AssignedMaterial "{7F65859AB41D2232}Assets/Items/Equipment/Kits/AllInOneKit/Data/AllInOneKit.emat"
     }
    }
    InheritVisibility 1
@@ -126,8 +126,8 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
     ItemPhysAttributes ItemPhysicalAttributes "{65DB14E82CC4060E}" {
      Weight 0
      SizeSetupStrategy Manual
-     ItemDimensions 15 15 15
-     ItemVolume 3000
+     ItemDimensions 0 0 0
+     ItemVolume 0
     }
     ItemAnimationAttributes ItemAnimationAttributes "{65DB14E82CC40608}" {
      AnimationAttachments {
@@ -153,7 +153,7 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
       AllowGadgetUse 1
      }
     }
-    m_Size SLOT_2x2
+    m_Size SLOT_1x1
     m_eQuickSlotSize SLOT_1x1
     m_SlotType SLOT_GADGETS_STORAGE
     m_bStackable 0
