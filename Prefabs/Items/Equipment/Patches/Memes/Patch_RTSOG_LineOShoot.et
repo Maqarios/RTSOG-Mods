@@ -7,22 +7,25 @@ GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_An
      Name "RTSOG - Line O Shoot"
      Description "RTSOG - Line O Shoot"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64DD4CA1077738FA}" {
      SourceMaterial "rhs_patch_usmc_id_1"
-     AssignedMaterial "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+     AssignedMaterial "{CBE3E5368ED64168}Assets/Characters/Patches/Memes/Line O Shoot/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+    "{CBE3E5368ED64168}Assets/Characters/Patches/Memes/Line O Shoot/Material.emat"
    }
    ItemMaterialsOverride {
-    "{CBE3E5368ED64168}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_LineOShoot.emat"
+    "{CBE3E5368ED64168}Assets/Characters/Patches/Memes/Line O Shoot/Material.emat"
    }
   }
  }

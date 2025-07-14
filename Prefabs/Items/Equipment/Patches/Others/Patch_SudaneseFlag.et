@@ -7,22 +7,25 @@ GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Re
      Name "Sudan Flag"
      Description "Sudan Flag"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64E283956361201D}" {
      SourceMaterial "Material"
-     AssignedMaterial "{AC0903E7ECC89900}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_SudaneseFlag.emat"
+     AssignedMaterial "{AC0903E7ECC89900}Assets/Characters/Patches/Others/Sudanese Flag/Normal/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{AC0903E7ECC89900}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_SudaneseFlag.emat"
+    "{AC0903E7ECC89900}Assets/Characters/Patches/Others/Sudanese Flag/Normal/Material.emat"
    }
    ItemMaterialsOverride {
-    "{AC0903E7ECC89900}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_SudaneseFlag.emat"
+    "{AC0903E7ECC89900}Assets/Characters/Patches/Others/Sudanese Flag/Normal/Material.emat"
    }
   }
  }

@@ -7,22 +7,25 @@ GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Re
      Name "RTSOG - Talon - Small - May-Day"
      Description "RTSOG - Talon - Small - May-Day"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight -999
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{650E97185644B065}" {
      SourceMaterial "Material"
-     AssignedMaterial "{555CD3BB0D67C03C}Assets/Characters/Patches/Talons/May-Day/Small/Material.emat"
+     AssignedMaterial "{555CD3BB0D67C03C}Assets/Characters/Patches/Names/May-Day/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{555CD3BB0D67C03C}Assets/Characters/Patches/Talons/May-Day/Small/Material.emat"
+    "{555CD3BB0D67C03C}Assets/Characters/Patches/Names/May-Day/Material.emat"
    }
    ItemMaterialsOverride {
-    "{555CD3BB0D67C03C}Assets/Characters/Patches/Talons/May-Day/Small/Material.emat"
+    "{555CD3BB0D67C03C}Assets/Characters/Patches/Names/May-Day/Material.emat"
    }
   }
  }

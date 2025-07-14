@@ -7,22 +7,25 @@ GameEntity : "{266C9240B1F0165F}Prefabs/Items/Equipment/Patches/Patch_RHS_20.et"
      Name "RTSOG - Logo - Red and Black"
      Description "RTSOG - Logo - Red and Black"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64DD5A27EF02DCCA}" {
      SourceMaterial "patch_rhs20"
-     AssignedMaterial "{47FDA2A72F4015D9}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_RedAndBlack.emat"
+     AssignedMaterial "{47FDA2A72F4015D9}Assets/Characters/Patches/Others/Logo/Small/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{47FDA2A72F4015D9}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_RedAndBlack.emat"
+    "{47FDA2A72F4015D9}Assets/Characters/Patches/Others/Logo/Small/Material.emat"
    }
    ItemMaterialsOverride {
-    "{47FDA2A72F4015D9}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_RedAndBlack.emat"
+    "{47FDA2A72F4015D9}Assets/Characters/Patches/Others/Logo/Small/Material.emat"
    }
   }
  }

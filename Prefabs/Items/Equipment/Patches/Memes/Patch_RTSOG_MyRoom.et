@@ -7,22 +7,25 @@ GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_An
      Name "RTSOG - My Room"
      Description "RTSOG - My Room"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64DD4CA121B53E43}" {
      SourceMaterial "rhs_patch_usmc_id_1"
-     AssignedMaterial "{55C48978CE73DD3B}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_MyRoom.emat"
+     AssignedMaterial "{55C48978CE73DD3B}Assets/Characters/Patches/Memes/My Room/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{55C48978CE73DD3B}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_MyRoom.emat"
+    "{55C48978CE73DD3B}Assets/Characters/Patches/Memes/My Room/Material.emat"
    }
    ItemMaterialsOverride {
-    "{55C48978CE73DD3B}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_MyRoom.emat"
+    "{55C48978CE73DD3B}Assets/Characters/Patches/Memes/My Room/Material.emat"
    }
   }
  }

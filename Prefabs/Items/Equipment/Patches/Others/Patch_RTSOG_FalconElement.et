@@ -7,22 +7,25 @@ GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_An
      Name "RTSOG - Falcon Element"
      Description "RTSOG - Falcon Element"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64DD4CA1A1C6B7EB}" {
      SourceMaterial "rhs_patch_usmc_id_1"
-     AssignedMaterial "{E8B48B726A990A25}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_FalconElement.emat"
+     AssignedMaterial "{E8B48B726A990A25}Assets/Characters/Patches/Others/Falcon Element/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{E8B48B726A990A25}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_FalconElement.emat"
+    "{E8B48B726A990A25}Assets/Characters/Patches/Others/Falcon Element/Material.emat"
    }
    ItemMaterialsOverride {
-    "{E8B48B726A990A25}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_FalconElement.emat"
+    "{E8B48B726A990A25}Assets/Characters/Patches/Others/Falcon Element/Material.emat"
    }
   }
  }

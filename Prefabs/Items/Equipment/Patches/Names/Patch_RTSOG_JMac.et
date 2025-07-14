@@ -7,22 +7,25 @@ GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Re
      Name "RTSOG - Talon - Small - JMac"
      Description "RTSOG - Talon - Small - JMac"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{650E97189A114348}" {
      SourceMaterial "Material"
-     AssignedMaterial "{555CD3BB0D67C03B}Assets/Characters/Patches/Talons/JMac/Small/Material.emat"
+     AssignedMaterial "{555CD3BB0D67C03B}Assets/Characters/Patches/Names/JMac/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{555CD3BB0D67C03B}Assets/Characters/Patches/Talons/JMac/Small/Material.emat"
+    "{555CD3BB0D67C03B}Assets/Characters/Patches/Names/JMac/Material.emat"
    }
    ItemMaterialsOverride {
-    "{555CD3BB0D67C03B}Assets/Characters/Patches/Talons/JMac/Small/Material.emat"
+    "{555CD3BB0D67C03B}Assets/Characters/Patches/Names/JMac/Material.emat"
    }
   }
  }

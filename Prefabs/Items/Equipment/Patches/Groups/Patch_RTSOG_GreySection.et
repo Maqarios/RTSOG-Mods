@@ -7,6 +7,9 @@ GameEntity : "{B6CC74F306F54A8D}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
      Name "RTSOG - Group - Grey Section"
      Description "RTSOG - Group - Grey Section"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
     CustomAttributes {
      PreviewRenderAttributes "{5DB09136B1C985C3}" {
       FOV 7

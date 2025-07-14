@@ -7,22 +7,25 @@ GameEntity : "{37195C9B2FFB3935}Prefabs/Items/Equipment/Patches/Patch_USMC_ID_An
      Name "RTSOG - Blu Blu Blu"
      Description "RTSOG - Blu Blu Blu"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64DD4A12C53A6575}" {
      SourceMaterial "rhs_patch_usmc_id_1"
-     AssignedMaterial "{A997D6A5CCD5D1A0}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_BluBluBlu.emat"
+     AssignedMaterial "{A997D6A5CCD5D1A0}Assets/Characters/Patches/Memes/Blu Blu Blu/Material.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{A997D6A5CCD5D1A0}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_BluBluBlu.emat"
+    "{A997D6A5CCD5D1A0}Assets/Characters/Patches/Memes/Blu Blu Blu/Material.emat"
    }
    ItemMaterialsOverride {
-    "{A997D6A5CCD5D1A0}Assets/Characters/Patches/data/Patch_Material_RTSOG_Other_BluBluBlu.emat"
+    "{A997D6A5CCD5D1A0}Assets/Characters/Patches/Memes/Blu Blu Blu/Material.emat"
    }
   }
  }

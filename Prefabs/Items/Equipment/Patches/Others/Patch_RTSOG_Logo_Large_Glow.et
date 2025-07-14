@@ -7,22 +7,25 @@ GameEntity : "{2E2721DB0A4FB249}Prefabs/Items/Equipment/Patches/Patch_RU_Berlins
      Name "RTSOG - Logo - Large - Red and Black - Glow"
      Description "RTSOG - Logo - Large - Red and Black - Glow"
     }
+    ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
+     Weight 0
+    }
    }
   }
   MeshObject "{5DB09136B1C985B5}" {
    Materials {
     MaterialAssignClass "{64E665AF1D9DFF89}" {
      SourceMaterial "03"
-     AssignedMaterial "{0377431AF7977C36}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_Glow.emat"
+     AssignedMaterial "{0377431AF7977C36}Assets/Characters/Patches/Others/Logo/Large/Material_Glow.emat"
     }
    }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{0377431AF7977C36}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_Glow.emat"
+    "{0377431AF7977C36}Assets/Characters/Patches/Others/Logo/Large/Material_Glow.emat"
    }
    ItemMaterialsOverride {
-    "{0377431AF7977C36}Assets/Characters/Patches/data/Patch_Material_RTSOG_Logo_Large_RedAndBlack_Glow.emat"
+    "{0377431AF7977C36}Assets/Characters/Patches/Others/Logo/Large/Material_Glow.emat"
    }
   }
  }
