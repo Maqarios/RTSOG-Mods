@@ -3,7 +3,7 @@ GenericEntity : "{89FAE23A65BBB46D}Prefabs/Props/Military/CISS/SupplyDrop/Parts/
  components {
   RTSOGLimited_ArsenalComponent "{65DB14FAA30E752D}" {
    m_eSupportedArsenalItemTypes 263038
-   m_eSupportedArsenalItemModes 18
+   m_eSupportedArsenalItemModes 50
    m_bGetDefaultIfNoFaction 0
    m_eArsenalTypes GADGETS
   }
