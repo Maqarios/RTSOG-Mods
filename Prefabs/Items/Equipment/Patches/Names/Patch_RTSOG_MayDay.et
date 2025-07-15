@@ -8,7 +8,7 @@ GameEntity : "{FEDC7DA627D89A65}Prefabs/Items/Equipment/Patches/Patch_RU_Flag_Re
      Description "RTSOG - Talon - Small - May-Day"
     }
     ItemPhysAttributes ItemPhysicalAttributes "{5DB09136B1C985D2}" {
-     Weight -999
+     Weight 0
     }
    }
   }
