@@ -2,7 +2,7 @@ modded class SCR_VotingManagerComponent {
 	void Vote2(int playerID, EVotingType type, int value) {}
 
 	void RemoveVote2(int playerID, EVotingType type, int value) {}
-	
+
 	bool StartVoting2(EVotingType type, int startingPlayerID, int value = SCR_VotingBase.DEFAULT_VALUE) {}
 
 	void EndVoting2(EVotingType type, int value = SCR_VotingBase.DEFAULT_VALUE, EVotingOutcome outcome = EVotingOutcome.EVALUATE) {}
@@ -16,35 +16,21 @@ modded class SCR_VotingManagerComponent {
 	}
 
 	protected void EOnFrame2(IEntity owner, float timeSlice) {}
-	
-	
+
 	// Server Side
 	override protected void EndVoting(SCR_VotingBase voting, EVotingOutcome outcome = EVotingOutcome.EVALUATE) {
 		EVotingType type = voting.GetType();
 		int value = voting.GetValue();
 		
 		if (type == EVotingType.EDITOR_IN || type == EVotingType.EDITOR_OUT || type == EVotingType.EDITOR_WITHDRAW) {
-			// Get allowed groups
+			// Get certified GMs
 			array<string> certifiedGMs;
-			array<string> chalkTeam;
-			array<string> redSection;
-			array<string> greySection;
-			array<string> blackSection;
-			array<string> redTalon;
-			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
+			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, null, null, null, null);
 			
-			// Get player BI identifier
+			// Get player bohemia id
 			string playerEID = RTSOGMods.GetPlayerEID(value);
 			
-			// Check if player is allowed in the group
-			bool isCertifiedGM = certifiedGMs.Contains(playerEID);
-			bool isChalkTeam = chalkTeam.Contains(playerEID);
-			bool isRedSection = redSection.Contains(playerEID);
-			bool isGreySection = greySection.Contains(playerEID);
-			bool isBlackSection = blackSection.Contains(playerEID);
-			bool isRedTalon = redTalon.Contains(playerEID);
-			
-			if  (isCertifiedGM || isRedTalon) {
+			if  (certifiedGMs.Contains(playerEID)) {
 				super.EndVoting(voting, outcome);
 			}
 		} else {

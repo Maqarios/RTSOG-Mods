@@ -15,10 +15,9 @@ modded class SCR_GroupsManagerComponent {
 		array<string> redSection;
 		array<string> greySection;
 		array<string> blackSection;
-		array<string> redTalon;
-		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
+		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection);
 		
-		if (group.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon))
+		if (group.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection))
 			return -1;
 		
 		group.AddPlayer(playerID);
@@ -47,10 +46,9 @@ modded class SCR_GroupsManagerComponent {
 			array<string> redSection;
 			array<string> greySection;
 			array<string> blackSection;
-			array<string> redTalon;
-			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
+			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection);
 			
-			if (newGroup.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon))
+			if (newGroup.IsFull() || !isPlayerAllowedInGroup(groupName, playerEID, certifiedGMs, chalkTeam, redSection, greySection, blackSection))
 			{
 				m_iMovingPlayerToGroupID = -1;
 				return -1;
@@ -67,17 +65,13 @@ modded class SCR_GroupsManagerComponent {
 		}
 	}
 	
-	bool isPlayerAllowedInGroup(string groupName, string playerEID, array<string> certifiedGMs, array<string> chalkTeam, array<string> redSection, array<string> greySection, array<string> blackSection, array<string> redTalon) {
+	bool isPlayerAllowedInGroup(string groupName, string playerEID, array<string> certifiedGMs, array<string> chalkTeam, array<string> redSection, array<string> greySection, array<string> blackSection) {
 		// Check if player is allowed in the group
 		bool isCertifiedGM = certifiedGMs.Contains(playerEID);
 		bool isChalkTeam = chalkTeam.Contains(playerEID);
 		bool isRedSection = redSection.Contains(playerEID);
 		bool isGreySection = greySection.Contains(playerEID);
 		bool isBlackSection = blackSection.Contains(playerEID);
-		bool isRedTalon = redTalon.Contains(playerEID);
-		
-		if (isRedTalon)
-			return true;
 		
 		if(groupName == "Green Team")
 			return true;
@@ -98,7 +92,7 @@ modded class SCR_GroupsManagerComponent {
 			return true;
 		
 		array<string> predefinedGroups = new array<string>();
-		predefinedGroups = {"Green Team", "Chalk Team", "Red Section", "Grey Section", "Black Section", "Red Talon", "Watch Tower"};
+		predefinedGroups = {"Green Team", "Chalk Team", "Red Section", "Grey Section", "Black Section", "Watch Tower"};
 		if(!predefinedGroups.Contains(groupName))
 			return true;
 		

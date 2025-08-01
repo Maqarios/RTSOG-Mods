@@ -5,8 +5,7 @@ modded class SCR_ArsenalManagerComponent {
 		array<string> redSection;
 		array<string> greySection;
 		array<string> blackSection;
-		array<string> redTalon;
-		GetGroupsPlayersLists(chalkTeam, redSection, greySection, blackSection, redTalon);
+		RTSOGMods.GetGroupsPlayersLists(null, chalkTeam, redSection, greySection, blackSection);
 		
 		// Get Player Enfusion ID
 		string playerEID = RTSOGMods.GetPlayerEID(playerId);
@@ -15,24 +14,10 @@ modded class SCR_ArsenalManagerComponent {
 		bool isRedSection = redSection.Contains(playerEID);
 		bool isGreySection = greySection.Contains(playerEID);
 		bool isBlackSection = blackSection.Contains(playerEID);
-		bool isRedTalon = redTalon.Contains(playerEID);
-		if (isChalkTeam || isRedSection || isGreySection || isBlackSection || isRedTalon) {
+		if (isChalkTeam || isRedSection || isGreySection || isBlackSection) {
 			return true;
 		}
 		
 		return super.CanSaveLoadout(playerId, characterEntity, playerFactionAffiliation, arsenalComponent, sendNotificationOnFailed);
-	}
-	
-	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
-	void GetGroupsPlayersLists(out array<string> chalkTeam, out array<string> redSection, out array<string> greySection, out array<string> blackSection, out array<string> redTalon) {
-		if(!Replication.IsServer()) return;
-
-	    RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
-		
-		chalkTeam = whitelist.chalkTeam;
-		redSection = whitelist.redSection;
-		greySection = whitelist.greySection;
-		blackSection = whitelist.blackSection;
-		redTalon = whitelist.redTalon;
 	}
 }

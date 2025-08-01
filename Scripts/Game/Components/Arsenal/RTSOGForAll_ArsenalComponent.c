@@ -95,12 +95,9 @@ class RTSOGForAll_ArsenalComponent: SCR_ArsenalComponent {
 		array<string> redSection;
 		array<string> greySection;
 		array<string> blackSection;
-		array<string> redTalon;
-		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection, redTalon);
+		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection);
 		
 		PrintFormat("RTSOGForAll_ArsenalComponent | Player is updating the blacklists: %1", playerEID, level: LogLevel.NORMAL);
-		
-		if (redTalon.Contains(playerEID)) return;
 
         foreach (string faction : blacklist.factions) 
             blacklistedFactions.Insert(faction);
