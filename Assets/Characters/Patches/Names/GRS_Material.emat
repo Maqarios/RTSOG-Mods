@@ -1,0 +1,4 @@
+MatPBRBasic {
+ Color 0.118 0.118 0.118 1
+ BCRMap "{612F0418EB473B23}Assets/Rectangle Patches/Data/donttreadonme_rect_2_BCR.edds"
+}

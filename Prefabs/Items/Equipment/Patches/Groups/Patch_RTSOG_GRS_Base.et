@@ -1,0 +1,25 @@
+GameEntity : "{C3C66DFD34ADB415}Prefabs/Flag_Patches/USA_Flag_Color.et" {
+ ID "657B0C0A4C1F9EDE"
+ components {
+  InventoryItemComponent "{657B0C0AEEF49C10}" {
+   Attributes SCR_ItemAttributeCollection "{657B0C0AEEF49C16}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{657B0C0AEEF49F14}" {
+     Name "GRS: Patch Reaper"
+     Description "GRS: Patch Reaper"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{657B0C0AEEF49F3A}" {
+     ItemDimensions 2 2 2
+    }
+   }
+  }
+  MeshObject "{657B0C0AEEEB7DCB}" {
+   Object "{960964817D761D6E}Assets/Circle_Patches/Circle_Patch.xob"
+  }
+  BaseLoadoutClothComponent "{657B0C0AEEEB7D3C}" {
+   AreaType GRS_ShirtLowerPatch "{657CE76F58F283CC}" {
+   }
+   WornModel "{960964817D761D6E}Assets/Circle_Patches/Circle_Patch.xob"
+   ItemModel "{960964817D761D6E}Assets/Circle_Patches/Circle_Patch.xob"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EFAD93CC421A1FDC}Prefabs/Items/Equipment/Patches/Names/Patch_RTSOG_GRS_RedSep.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8A0327EA0D0AFB2F}Assets/Characters/Patches/Groups/Black Section/GRS_Material2.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

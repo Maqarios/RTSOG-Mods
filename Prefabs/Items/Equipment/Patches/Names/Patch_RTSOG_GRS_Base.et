@@ -1,0 +1,26 @@
+GameEntity : "{5F728F49C9DDF307}Prefabs/SF_patch.et" {
+ ID "657C17E446464A1E"
+ components {
+  InventoryItemComponent "{657C17E446464A0E}" {
+   Attributes SCR_ItemAttributeCollection "{657C17E446464A0D}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{657C17E446464A0A}" {
+     Name "GRS: Patch Don't Tread On Me"
+     Description "GRS: Patch Don't Tread On Me"
+    }
+   }
+  }
+  MeshObject "{657C17E446464A3F}" {
+   Object "{0B3F866389C48C54}Assets/Rectangle Patches/Rectangle_Patch.xob"
+   Materials {
+    MaterialAssignClass "{662CF1AC1A6AA099}" {
+     SourceMaterial "Mat_Patch"
+     AssignedMaterial "{FF612DA1705838BD}Assets/Rectangle Patches/Data/DTOM_1.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{657C17E446464A39}" {
+   WornModel "{0B3F866389C48C54}Assets/Rectangle Patches/Rectangle_Patch.xob"
+   ItemModel "{0B3F866389C48C54}Assets/Rectangle Patches/Rectangle_Patch.xob"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F7C36310D93A51EB}Prefabs/Items/Equipment/Patches/Names/Patch_RTSOG_GRS_LIMABRAVO.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

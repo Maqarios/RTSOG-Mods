@@ -1,0 +1,21 @@
+GameEntity : "{358667905094344D}Prefabs/Items/Equipment/Patches/Groups/Patch_RTSOG_GRS_Base.et" {
+ ID "657B0C0A4C1F9EDE"
+ components {
+  InventoryItemComponent "{657B0C0AEEF49C10}" {
+   Attributes SCR_ItemAttributeCollection "{657B0C0AEEF49C16}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{657B0C0AEEF49F14}" {
+     Name "RTSOG - Group - GRS - Black Section"
+     Description "RTSOG - Group - GRS - Black Section"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{657B0C0AEEEB7D3C}" {
+   WornMaterialsOverride {
+    "{47477E8D0631CE26}Assets/Characters/Patches/Groups/Black Section/GRS_Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{47477E8D0631CE26}Assets/Characters/Patches/Groups/Black Section/GRS_Material.emat"
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{61F27C811F5CD33A}Prefabs/Items/Equipment/Patches/Groups/Patch_RTSOG_GRS_ChalkTeam.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

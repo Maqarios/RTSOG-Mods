@@ -1,0 +1,21 @@
+GameEntity : "{AAF63CC00D7131CB}Prefabs/Items/Equipment/Patches/Names/Patch_RTSOG_GRS_Base.et" {
+ ID "657C17E446464A1E"
+ components {
+  InventoryItemComponent "{657C17E446464A0E}" {
+   Attributes SCR_ItemAttributeCollection "{657C17E446464A0D}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{657C17E446464A0A}" {
+     Name "RTSOG - Talon - GRS - LIMABRAVO"
+     Description "RTSOG - Talon - GRS - LIMABRAVO"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{657C17E446464A39}" {
+   WornMaterialsOverride {
+    "{C4294A95E034CA5E}Assets/Characters/Patches/Names/LIMABRAVO/GRS_Material.emat"
+   }
+   ItemMaterialsOverride {
+    "{C4294A95E034CA5E}Assets/Characters/Patches/Names/LIMABRAVO/GRS_Material.emat"
+   }
+  }
+ }
+}
