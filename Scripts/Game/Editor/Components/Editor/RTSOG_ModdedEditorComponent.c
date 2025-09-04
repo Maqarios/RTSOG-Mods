@@ -1,6 +1,6 @@
 modded class SCR_BaseActionsEditorComponent
 {
-	protected void ActionPerform(SCR_BaseEditorAction action, SCR_EditableEntityComponent hoveredEntityComponent, set<SCR_EditableEntityComponent> selectedEntityComponents, vector cursorWorldPosition, int flags, int param)
+	override protected void ActionPerform(SCR_BaseEditorAction action, SCR_EditableEntityComponent hoveredEntityComponent, set<SCR_EditableEntityComponent> selectedEntityComponents, vector cursorWorldPosition, int flags, int param)
 	{
 		// Logging Mechanism
 		string actionType = "Context";
@@ -51,7 +51,7 @@ modded class SCR_BaseActionsEditorComponent
 
 modded class SCR_PlacingEditorComponent
 {
-	protected void OnBeforeEntityCreatedServer(ResourceName prefab)
+	override protected void OnBeforeEntityCreatedServer(ResourceName prefab)
 	{
 		// Logging Mechanism
 		string actionType = "Spawn";

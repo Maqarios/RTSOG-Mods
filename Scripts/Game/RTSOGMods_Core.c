@@ -6,22 +6,10 @@ class RTSOGMods {
 	static string groupsPlayersPath = "$profile:RTSOGMods_GroupsPlayers.json";
 	static ref array<string> whitelistedPlayers;
 	
-	static RTSOGLimited_ArnsenalBlacklist LoadArsenalBlacklist() {
-		RTSOGLimited_ArnsenalBlacklist blacklist = new RTSOGLimited_ArnsenalBlacklist();
-		blacklist.LoadFromFile(limitedArsenalBlacklistPath);
-		
-		return blacklist;
-	}
+	static string damageMultipliersPath = "$profile:RTSOGMods_DamageMultiplier.json";
+	static ref RTSOGMods_DamageMultipliers damageMultipliers;
 	
-	static RTSOGMods_GroupsPlayersWhitelist LoadGroupsPlayersWhitelist() {
-		RTSOGMods_GroupsPlayersWhitelist whitelist = new RTSOGMods_GroupsPlayersWhitelist();
-		whitelist.LoadFromFile(groupsPlayersPath);
-		
-		return whitelist;
-	}
-	
-	static string GetPlayerEID(int playerId)
-	{		
+	static string GetPlayerEID(int playerId) {		
 		BackendApi api = GetGame().GetBackendApi();
 		
 		if (!api)
@@ -33,6 +21,30 @@ class RTSOGMods {
 		
 		return api.GetPlayerIdentityId(playerId);
 	};
+	
+	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
+	static RTSOGLimited_ArnsenalBlacklist LoadArsenalBlacklist() {
+		RTSOGLimited_ArnsenalBlacklist blacklist = new RTSOGLimited_ArnsenalBlacklist();
+		blacklist.LoadFromFile(limitedArsenalBlacklistPath);
+		
+		return blacklist;
+	}
+	
+	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
+	static RTSOGMods_GroupsPlayersWhitelist LoadGroupsPlayersWhitelist() {
+		RTSOGMods_GroupsPlayersWhitelist whitelist = new RTSOGMods_GroupsPlayersWhitelist();
+		whitelist.LoadFromFile(groupsPlayersPath);
+		
+		return whitelist;
+	}
+	
+	[RplRpc(RplChannel.Reliable, RplRcver.Broadcast)]
+	static void LoadDamageMultipliers() {
+		damageMultipliers = new RTSOGMods_DamageMultipliers();
+		damageMultipliers.LoadFromFile(damageMultipliersPath);
+		
+		PrintFormat("RTSOGMods | Loaded Damage Multiplier! %1", damageMultipliers.playerKineticDamageMultiplier, level: LogLevel.NORMAL);
+	}
 	
 	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
 	static void GetGroupsPlayersLists(out array<string> certifiedGMs, out array<string> chalkTeam, out array<string> redSection, out array<string> greySection, out array<string> blackSection) {
@@ -80,5 +92,18 @@ class RTSOGMods_GroupsPlayersWhitelist : JsonApiStruct {
 		RegV("redSection");
 		RegV("greySection");
 		RegV("blackSection");
+	}
+}
+
+class RTSOGMods_DamageMultipliers : JsonApiStruct {
+	float playerKineticDamageMultiplier;
+	float AIKineticDamageMultiplier;
+	
+	void RTSOGMods_DamageMultipliers() {
+		playerKineticDamageMultiplier = 1.0;
+		AIKineticDamageMultiplier = 1.0;
+		
+		RegV("playerKineticDamageMultiplier");
+		RegV("AIKineticDamageMultiplier");
 	}
 }

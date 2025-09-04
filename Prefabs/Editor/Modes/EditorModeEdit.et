@@ -1,6 +1,8 @@
 SCR_EditorModeEntity : "{E56F54E533ACE527}Prefabs/Editor/Modes/EditorModeBase.et" {
  ID "54F0A77282A3AA3B"
  components {
+  RTSOG_BaseEditorComponent "{66476B52E94E4258}" {
+  }
   SCR_PlacingEditorComponent "{5145484399BAA2E7}" {
    m_Registries {
     SCR_PlaceableEntitiesRegistry "{64DA002375F09BB1}" : "{9D63F3A89EA0EDF5}Configs/Editor/PlaceableEntities/RTSOGEntities.conf" {
