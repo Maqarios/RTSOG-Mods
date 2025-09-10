@@ -88,7 +88,7 @@ modded class SCR_GroupsManagerComponent {
 		if(groupName == "Black Section" && isBlackSection)
 			return true;
 		
-		if(groupName == "Watch Tower" && isCertifiedGM)
+		if(groupName == "Watch Tower" && (isCertifiedGM || isChalkTeam || isRedSection || isGreySection || isBlackSection))
 			return true;
 		
 		array<string> predefinedGroups = new array<string>();
