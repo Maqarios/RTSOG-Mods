@@ -3,6 +3,15 @@ SCR_ChimeraCharacter {
  components {
   ActionsManagerComponent "{520EA1D2F659CE02}" {
    additionalActions {
+    ACE_Carrying_CarryUserAction "{64AD3741DFD505F8}" {
+     Duration 1
+    }
+    ACE_Medical_CheckVitalsUserAction "{621737D0C7C00B68}" {
+     Duration 1
+    }
+    ACE_Medical_CheckVitalsUserAction "{621737D02A688589}" {
+     Duration 1
+    }
     SCR_MorphineUserAction "{6511176FA9DB16F9}" {
      ParentContextList {
       "RightArm" "LeftArm" "RightLeg" "LeftLeg"
