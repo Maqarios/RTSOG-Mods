@@ -1,0 +1,8 @@
+ACE_Carrying_HelperCompartment : "{0D226790BE615DC7}Prefabs/Helpers/ACE_AnimationHelperCompartment.et" {
+ ID "4B42E71698F5739C"
+ components {
+  ACE_CarriableAnimationHelperComponent "{64A80AC492A35587}" {
+   m_fCarrierSpeedLimit 0.75
+  }
+ }
+}

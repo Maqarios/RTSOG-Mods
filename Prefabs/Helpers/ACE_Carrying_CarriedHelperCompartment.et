@@ -1,0 +1,8 @@
+ACE_Carrying_HelperCompartment : "{FF78613C1DAFF28F}Prefabs/Helpers/ACE_Carrying_BaseHelperCompartment.et" {
+ ID "4B42E71698F5739C"
+ components {
+  ACE_CarriableAnimationHelperComponent "{64A80AC492A35587}" {
+   m_bCarrierAllowWeapon 1
+  }
+ }
+}
