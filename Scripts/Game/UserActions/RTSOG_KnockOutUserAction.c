@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------------------------
-class RTSOG_OrderReleaseUserAction : ScriptedUserAction
+class RTSOG_KnockOutUserAction : ScriptedUserAction
 {
 	//------------------------------------------------------------------------------------------------
 	override bool CanBeShownScript(IEntity user)
@@ -19,7 +19,7 @@ class RTSOG_OrderReleaseUserAction : ScriptedUserAction
 		if (!controller)
 			return false;
 		
-		if (controller.GetLifeState() != ECharacterLifeState.ALIVE || controller.IsUnconscious() || !controller.ACE_Captives_HasSurrendered())
+		if (controller.GetLifeState() != ECharacterLifeState.ALIVE || controller.IsUnconscious())
 			return false;
 		
 		return true;
@@ -45,6 +45,6 @@ class RTSOG_OrderReleaseUserAction : ScriptedUserAction
 		if (!controller)
 			return;
 		
-		controller.Rpc_OrderRelease();
+		controller.Rpc_KnockOut();
 	}
 }

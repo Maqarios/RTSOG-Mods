@@ -2,6 +2,18 @@ SCR_ChimeraCharacter {
  ID "520EC961A090B1EE"
  components {
   ActionsManagerComponent "{520EA1D2F659CE02}" {
+   ActionContexts {
+    UserActionContext "{6658BD15A9C1BC4E}" {
+     ContextName "Back Head"
+     Position PointInfo "{6658BD15A9C1BC88}" {
+      PivotID "Head"
+     }
+     Radius 0.35
+     Omnidirectional 0
+     VisibilityAngle 60
+     LineOfSightCheck 1
+    }
+   }
    additionalActions {
     ACE_Carrying_CarryUserAction "{64AD3741DFD505F8}" {
      Duration 1

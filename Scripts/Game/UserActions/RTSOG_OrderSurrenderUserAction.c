@@ -19,7 +19,7 @@ class RTSOG_OrderSurrenderUserAction : ScriptedUserAction
 		if (!controller)
 			return false;
 		
-		if (controller.IsUnconscious() || controller.ACE_Captives_HasSurrendered())
+		if (controller.GetLifeState() != ECharacterLifeState.ALIVE || controller.IsUnconscious() || controller.ACE_Captives_HasSurrendered())
 			return false;
 		
 		return true;
