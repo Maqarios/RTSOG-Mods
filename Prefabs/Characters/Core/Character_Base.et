@@ -52,6 +52,14 @@ SCR_ChimeraCharacter {
      }
      Duration 0.5
     }
+    RTSOG_KnockOutUserAction "{6658B66586D5C114}" {
+     ParentContextList {
+      "Back Head"
+     }
+     UIInfo UIInfo "{6658B6658F5C33FA}" {
+      Name "Knock Out"
+     }
+    }
    }
   }
  }
