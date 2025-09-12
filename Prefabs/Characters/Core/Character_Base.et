@@ -22,6 +22,24 @@ SCR_ChimeraCharacter {
      ActionTitle "Inject KUK"
      m_eConsumableType RTSOG_KnockUnKnock
     }
+    RTSOG_OrderSurrenderUserAction "{6657078295530695}" {
+     ParentContextList {
+      "Chest"
+     }
+     UIInfo UIInfo "{66570782900E6455}" {
+      Name "Order Surrender"
+     }
+     Duration 2
+    }
+    RTSOG_OrderReleaseUserAction "{6658A87B9AF1F5C2}" {
+     ParentContextList {
+      "Chest"
+     }
+     UIInfo UIInfo "{6658A87BA8C8E7F1}" {
+      Name "Order Release"
+     }
+     Duration 0.5
+    }
    }
   }
  }
