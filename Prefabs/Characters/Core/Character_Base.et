@@ -2,28 +2,7 @@ SCR_ChimeraCharacter {
  ID "520EC961A090B1EE"
  components {
   ActionsManagerComponent "{520EA1D2F659CE02}" {
-   ActionContexts {
-    UserActionContext "{6658BD15A9C1BC4E}" {
-     ContextName "Back Head"
-     Position PointInfo "{6658BD15A9C1BC88}" {
-      PivotID "Head"
-     }
-     Radius 0.35
-     Omnidirectional 0
-     VisibilityAngle 60
-     LineOfSightCheck 1
-    }
-   }
    additionalActions {
-    ACE_Carrying_CarryUserAction "{64AD3741DFD505F8}" {
-     Duration 1
-    }
-    ACE_Medical_CheckVitalsUserAction "{621737D0C7C00B68}" {
-     Duration 1
-    }
-    ACE_Medical_CheckVitalsUserAction "{621737D02A688589}" {
-     Duration 1
-    }
     SCR_MorphineUserAction "{6511176FA9DB16F9}" {
      ParentContextList {
       "RightArm" "LeftArm" "RightLeg" "LeftLeg"
@@ -33,32 +12,6 @@ SCR_ChimeraCharacter {
      }
      ActionTitle "Inject KUK"
      m_eConsumableType RTSOG_KnockUnKnock
-    }
-    RTSOG_OrderSurrenderUserAction "{6657078295530695}" {
-     ParentContextList {
-      "Chest"
-     }
-     UIInfo UIInfo "{66570782900E6455}" {
-      Name "Order Surrender"
-     }
-     Duration 2
-    }
-    RTSOG_OrderReleaseUserAction "{6658A87B9AF1F5C2}" {
-     ParentContextList {
-      "Chest"
-     }
-     UIInfo UIInfo "{6658A87BA8C8E7F1}" {
-      Name "Order Release"
-     }
-     Duration 0.5
-    }
-    RTSOG_KnockOutUserAction "{6658B66586D5C114}" {
-     ParentContextList {
-      "Back Head"
-     }
-     UIInfo UIInfo "{6658B6658F5C33FA}" {
-      Name "Knock Out"
-     }
     }
    }
   }
