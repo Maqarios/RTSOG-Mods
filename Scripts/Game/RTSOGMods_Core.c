@@ -47,16 +47,10 @@ class RTSOGMods {
 	}
 	
 	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
-	static void GetGroupsPlayersLists(out array<string> certifiedGMs, out array<string> chalkTeam, out array<string> redSection, out array<string> greySection, out array<string> blackSection) {
-		if(!Replication.IsServer()) return;
+	static RTSOGMods_GroupsPlayersWhitelist GetGroupsPlayersLists() {
+		if(!Replication.IsServer()) return null;
 
-	    RTSOGMods_GroupsPlayersWhitelist whitelist = LoadGroupsPlayersWhitelist();
-		
-		certifiedGMs = whitelist.certifiedGMs;
-		chalkTeam = whitelist.chalkTeam;
-		redSection = whitelist.redSection;
-		greySection = whitelist.greySection;
-		blackSection = whitelist.blackSection;
+	    return LoadGroupsPlayersWhitelist();
 	}
 }
 
@@ -79,19 +73,22 @@ class RTSOGMods_GroupsPlayersWhitelist : JsonApiStruct {
 	ref array<string> redSection;
 	ref array<string> greySection;
 	ref array<string> blackSection;
-		
+	ref array<string> extra;
+	
 	void RTSOGMods_GroupsPlayersWhitelist() {
 		certifiedGMs = new array<string>();
 		chalkTeam = new array<string>();
 		redSection = new array<string>();
 		greySection = new array<string>();
 		blackSection = new array<string>();
+		extra = new array<string>();
 		
 		RegV("certifiedGMs");
 		RegV("chalkTeam");
 		RegV("redSection");
 		RegV("greySection");
 		RegV("blackSection");
+		RegV("extra");
 	}
 }
 

@@ -88,14 +88,8 @@ class RTSOGForAll_ArsenalComponent: SCR_ArsenalComponent {
         blacklistedFactions = new array<string>();
         blacklistedItems = new array<string>();
 		
-		// Check if owner is RTSOG
+		//TODO: Check if owner is RTSOG
 		string playerEID = RTSOGMods.GetPlayerEID(playerId);
-		array<string> certifiedGMs;
-		array<string> chalkTeam;
-		array<string> redSection;
-		array<string> greySection;
-		array<string> blackSection;
-		RTSOGMods.GetGroupsPlayersLists(certifiedGMs, chalkTeam, redSection, greySection, blackSection);
 		
 		PrintFormat("RTSOGForAll_ArsenalComponent | Player is updating the blacklists: %1", playerEID, level: LogLevel.NORMAL);
 

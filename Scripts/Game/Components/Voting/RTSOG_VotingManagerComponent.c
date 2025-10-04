@@ -23,14 +23,18 @@ modded class SCR_VotingManagerComponent {
 		int value = voting.GetValue();
 		
 		if (type == EVotingType.EDITOR_IN || type == EVotingType.EDITOR_OUT || type == EVotingType.EDITOR_WITHDRAW) {
-			// Get certified GMs
-			array<string> certifiedGMs;
-			RTSOGMods.GetGroupsPlayersLists(certifiedGMs, null, null, null, null);
-			
 			// Get player bohemia id
 			string playerEID = RTSOGMods.GetPlayerEID(value);
 			
-			if  (certifiedGMs.Contains(playerEID)) {
+			// Get groups whitelist
+			RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+			if (!whitelist)
+			{
+				super.EndVoting(voting, outcome);
+				return;
+			}
+			
+			if  (whitelist.certifiedGMs.Contains(playerEID)) {
 				super.EndVoting(voting, outcome);
 			}
 		} else {
