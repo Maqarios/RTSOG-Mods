@@ -1,0 +1,18 @@
+GenericEntity : "{6E9190BC2713551D}Prefabs/Compositions/Slotted/BuildableComposition_Base.et" {
+ ID "5282DCB5DFC8538F"
+ {
+  GenericEntity {
+   ID "64570358047C18AB"
+   components {
+    MeshObject "{6333574C9C5942C8}" {
+     Materials {
+      MaterialAssignClass "{6688DB06D3E763FE}" {
+       SourceMaterial "Screen1"
+       AssignedMaterial "{58371144AC18F6CC}Assets/Props/Signs/data/RTSOG_Billboard.emat"
+      }
+     }
+    }
+   }
+  }
+ }
+}
