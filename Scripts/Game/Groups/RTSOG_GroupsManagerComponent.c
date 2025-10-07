@@ -8,9 +8,9 @@ modded class SCR_GroupsManagerComponent {
 		
 		// Get Player Enfusion ID
 		string playerEID = RTSOGMods.GetPlayerEID(playerID);
-
+		
 		// Get groups whitelist
-		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
 		if (!whitelist)
 			return -1;
 		
@@ -38,7 +38,7 @@ modded class SCR_GroupsManagerComponent {
 			string groupName = newGroup.GetCustomName();
 			
 			// Get groups whitelist
-			RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+			RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
 			if (!whitelist)
 				return -1;
 			

@@ -7,7 +7,7 @@ modded class SCR_PlayerListMenu : SCR_SuperMenuBase
 		string playerEID = RTSOGMods.GetPlayerEID(id);
 		
 		// Get groups whitelist
-		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
 		if (!whitelist || !whitelist.extra.Contains(playerEID))
 		{
 			super.CreateEntry(id, editorDelegateManager);

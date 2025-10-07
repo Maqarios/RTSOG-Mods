@@ -24,6 +24,9 @@ class RTSOGMods {
 	
 	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
 	static RTSOGLimited_ArnsenalBlacklist LoadArsenalBlacklist() {
+		// Only execute on server
+        if (!Replication.IsServer()) return null;
+
 		RTSOGLimited_ArnsenalBlacklist blacklist = new RTSOGLimited_ArnsenalBlacklist();
 		blacklist.LoadFromFile(limitedArsenalBlacklistPath);
 		
@@ -32,6 +35,9 @@ class RTSOGMods {
 	
 	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
 	static RTSOGMods_GroupsPlayersWhitelist LoadGroupsPlayersWhitelist() {
+		// Only execute on server
+        if (!Replication.IsServer()) return null;
+		
 		RTSOGMods_GroupsPlayersWhitelist whitelist = new RTSOGMods_GroupsPlayersWhitelist();
 		whitelist.LoadFromFile(groupsPlayersPath);
 		
@@ -44,13 +50,6 @@ class RTSOGMods {
 		damageMultipliers.LoadFromFile(damageMultipliersPath);
 		
 		PrintFormat("RTSOGMods | Loaded Damage Multiplier! %1", damageMultipliers.playerKineticDamageMultiplier, level: LogLevel.NORMAL);
-	}
-	
-	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
-	static RTSOGMods_GroupsPlayersWhitelist GetGroupsPlayersLists() {
-		if(!Replication.IsServer()) return null;
-
-	    return LoadGroupsPlayersWhitelist();
 	}
 }
 

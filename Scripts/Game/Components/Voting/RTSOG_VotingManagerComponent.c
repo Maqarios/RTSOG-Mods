@@ -27,7 +27,7 @@ modded class SCR_VotingManagerComponent {
 			string playerEID = RTSOGMods.GetPlayerEID(value);
 			
 			// Get groups whitelist
-			RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+			RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
 			if (!whitelist)
 			{
 				super.EndVoting(voting, outcome);

@@ -4,7 +4,7 @@ modded class SCR_ArsenalManagerComponent {
 		string playerEID = RTSOGMods.GetPlayerEID(playerId);
 		
 		// Get groups whitelist
-		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.GetGroupsPlayersLists();
+		RTSOGMods_GroupsPlayersWhitelist whitelist = RTSOGMods.LoadGroupsPlayersWhitelist();
 		if (!whitelist)
 			return true;
 		
