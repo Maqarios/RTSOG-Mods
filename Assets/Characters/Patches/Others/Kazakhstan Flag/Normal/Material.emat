@@ -1,0 +1,4 @@
+MatPBRBasic : "{89E511B305815BB0}Assets/Characters/Patches/data/patch_ru_reflective.emat" {
+ BCRMap "{EF33581D993E8C65}Assets/Characters/Patches/Others/Kazakhstan Flag/Normal/data/BCR.edds"
+ NMOMap "{EE046C9084FF43E8}Assets/Characters/Patches/Others/Sudanese Flag/NMO.edds"
+}

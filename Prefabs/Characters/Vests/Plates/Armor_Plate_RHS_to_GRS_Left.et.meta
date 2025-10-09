@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7935CDA51300704D}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/Armor_Plate_RHS_to_GRS_Left.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
