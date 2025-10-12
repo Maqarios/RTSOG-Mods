@@ -49,7 +49,7 @@ class RTSOGMods {
 		damageMultipliers = new RTSOGMods_DamageMultipliers();
 		damageMultipliers.LoadFromFile(damageMultipliersPath);
 		
-		PrintFormat("RTSOGMods | Loaded Damage Multiplier! %1", damageMultipliers.playerKineticDamageMultiplier, level: LogLevel.NORMAL);
+		PrintFormat("RTSOGMods | Loaded Damage Multiplier! %1", damageMultipliers.playerKineticDamageMultiplier, level: LogLevel.DEBUG);
 	}
 }
 

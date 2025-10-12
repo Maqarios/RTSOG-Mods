@@ -56,11 +56,11 @@ modded class SCR_BaseActionsEditorComponent
 			// Logging Mechanism: Get Selected
 			if (selectedEntityComponent.GetPlayerID() == 0)
 			{
-				selected = selectedEntityComponent.GetDisplayName() + ",";
+				selected = selectedEntityComponent.GetDisplayName();
 			}
 			else
 			{
-				selected = RTSOGMods.GetPlayerEID(selectedEntityComponent.GetPlayerID()) + ",";
+				selected = RTSOGMods.GetPlayerEID(selectedEntityComponent.GetPlayerID());
 			}
 			
 			// Logging Mechanism: Printing
