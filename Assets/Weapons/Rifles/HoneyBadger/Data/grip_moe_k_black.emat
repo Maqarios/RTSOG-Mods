@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0 0 0 1
+ SpecularMul 5
+ MetalnessScale 0
+ BCRMap "{688AC19A792F7D05}Assets/Weapons/Rifles/HoneyBadger/Data/grip_moe_k_Grey_BCR.edds"
+ NMOMap "{51649B525D511D1B}Assets/Weapons/Rifles/HoneyBadger/Data/grip_moe_k_NMO.edds"
+}

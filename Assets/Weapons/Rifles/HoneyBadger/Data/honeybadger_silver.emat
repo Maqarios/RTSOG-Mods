@@ -1,0 +1,5 @@
+MatPBRBasic : "{39915245E8DFBEE1}Assets/Weapons/Rifles/HoneyBadger/Data/honeybadger_black.emat" {
+ RoughnessScale 0.5
+ AOScale 1.15
+ DielectricReflectance 0.15
+}

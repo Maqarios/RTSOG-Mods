@@ -1,0 +1,7 @@
+MatPBRBasic {
+ Color 0 0 0 1
+ SpecularMul 5
+ MetalnessScale 0
+ BCRMap "{044EA816812FA4A1}Assets/Weapons/Rifles/HoneyBadger/Data/honeybadger_stock_BCR.edds"
+ NMOMap "{3C9613845858F63F}Assets/Weapons/Rifles/HoneyBadger/Data/honeybadger_stock_NMO.edds"
+}
