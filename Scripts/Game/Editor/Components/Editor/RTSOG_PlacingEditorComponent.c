@@ -5,7 +5,7 @@ modded class SCR_PlacingEditorComponent
 		// Logging Mechanism
 		string actionType = "Spawn";
 		string instigator = "N/A";
-		string entity = prefab;
+		string target = prefab;
 		
 		// Logging Mechanism: Get Instigator
 		SCR_EditorManagerEntity manager = GetManager();
@@ -14,6 +14,6 @@ modded class SCR_PlacingEditorComponent
 		}
 		
 		// Logging Mechanism: Printing
-		PrintFormat("RTSOGMods | GM_MONITOR | type: %1, instigator: %2, entity: %3", actionType, instigator, entity, level: LogLevel.NORMAL);
+		PrintFormat("RTSOGMods | GM_MONITOR | type: %1, instigator: %2, target: %3", actionType, instigator, target, level: LogLevel.NORMAL);
 	}
 }

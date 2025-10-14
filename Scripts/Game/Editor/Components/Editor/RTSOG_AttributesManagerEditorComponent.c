@@ -15,15 +15,11 @@ modded class SCR_AttributesManagerEditorComponent
 				{
 					// Logging Mechanism
 					string actionType = "Attribute";
-					string actionName = "N/A";
 					string instigator = "N/A";
-					string selected = "N/A";
+					string target = "N/A";
 					string attributeStr = "N/A";
 					string before = "N/A";
 					string after = "N/A";
-					
-					// Logging Mechanism: Get Action
-					actionName = attribute.GetUIInfo().GetName();
 					
 					// Logging Mechanism: Get Instigator
 					SCR_EditorManagerEntity manager = GetManager();
@@ -31,13 +27,12 @@ modded class SCR_AttributesManagerEditorComponent
 						instigator = RTSOGMods.GetPlayerEID(manager.GetPlayerID());
 					}
 					
-					// Logging Mechanism: Get Selected
+					// Logging Mechanism: Get Target
 					SCR_EditableEntityComponent editableEntity = SCR_EditableEntityComponent.Cast(item);
-					if (PlayerID == 0) {
-						selected = editableEntity.GetDisplayName();
-					} else {
-						selected = RTSOGMods.GetPlayerEID(PlayerID);
-					}
+					if (editableEntity.GetPlayerID() == 0)
+						target = editableEntity.GetDisplayName();
+					else
+						target = RTSOGMods.GetPlayerEID(editableEntity.GetPlayerID());
 					
 					// Logging Mechanism: Get Attribute
 					attributeStr = attribute.GetUIInfo().GetName();
@@ -49,7 +44,7 @@ modded class SCR_AttributesManagerEditorComponent
 					after = var.GetFloat().ToString();
 					
 					// Logging Mechanism: Printing
-					PrintFormat("RTSOGMods | GM_MONITOR | type: %1, instigator: %2, action: %3, selected: %4, attribute: %5, before: %6, after: %7", actionType, instigator, actionName, selected, attributeStr, before, after, level: LogLevel.NORMAL);
+					PrintFormat("RTSOGMods | GM_MONITOR | type: %1, instigator: %2, target: %3, attribute: %4, before: %5, after: %6", actionType, instigator, target, attributeStr, before, after, level: LogLevel.NORMAL);
 				}
 			}
 		}
