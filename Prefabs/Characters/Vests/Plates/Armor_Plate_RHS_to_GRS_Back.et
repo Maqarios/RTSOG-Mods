@@ -1,9 +1,0 @@
-GenericEntity : "{1B4129A0C0C752A3}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/DestructibleArmorPlate_PCGenIII_ESAPIrevJ_Back.et" {
- ID "5E8AAD43E9190F4B"
- components {
-  BaseLoadoutClothComponent "{5E8AB8C5B004EA04}" {
-   AreaType GRS_Back_Plate "{5E8ECC6ABD879892}" {
-   }
-  }
- }
-}
