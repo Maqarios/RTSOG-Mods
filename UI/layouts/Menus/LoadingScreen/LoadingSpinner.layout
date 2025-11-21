@@ -1,0 +1,8 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5D0C895F3A65DB55}" {
+   Prefab "{5D0C895F3A65DB55}"
+   Color 0.651 0.0108 0 1
+  }
+ }
+}

@@ -1,0 +1,23 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5E04A00D30403301}" {
+   Prefab "{5E04A00D30403301}"
+   {
+    HorizontalLayoutWidgetClass "{5D0C8953FFAEEDEB}" {
+     Prefab "{5D0C8953FFAEEDEB}"
+     {
+      TextWidgetClass "{5D0C8953F31DD7E3}" {
+       Prefab "{5D0C8953F31DD7E3}"
+       Color 0.651 0.0108 0 1
+      }
+      ImageWidgetClass "{5D0C8953F456BDDF}" {
+       Prefab "{5D0C8953F456BDDF}"
+       Name "Icon"
+       Color 0.651 0.0108 0 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
