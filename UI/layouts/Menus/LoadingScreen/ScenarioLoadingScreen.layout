@@ -1,5 +1,19 @@
 FrameWidgetClass {
  {
+  OverlayWidgetClass "{5DFF03E4AD9D1E88}" {
+   Prefab "{5DFF03E4AD9D1E88}"
+   {
+    ScaleWidgetClass "{5CFCF5E894AE6629}" {
+     Prefab "{5CFCF5E894AE6629}"
+     {
+      ImageWidgetClass "{5CFCF5E894AE6628}" {
+       Prefab "{5CFCF5E894AE6628}"
+       Texture "{314A5AB08B8D4FDB}Assets/Game/RTSOG_Loading_Screen.edds"
+      }
+     }
+    }
+   }
+  }
   FrameWidgetClass "{5E04A017BD489B2A}" {
    Prefab "{5E04A017BD489B2A}"
    {
