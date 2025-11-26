@@ -29,10 +29,12 @@ modded class SCR_AttributesManagerEditorComponent
 					
 					// Logging Mechanism: Get Target
 					SCR_EditableEntityComponent editableEntity = SCR_EditableEntityComponent.Cast(item);
-					if (editableEntity.GetPlayerID() == 0)
-						target = editableEntity.GetDisplayName();
-					else
-						target = RTSOGMods.GetPlayerEID(editableEntity.GetPlayerID());
+					if (editableEntity) {
+						if (editableEntity.GetPlayerID() == 0)
+							target = editableEntity.GetDisplayName();
+						else
+							target = RTSOGMods.GetPlayerEID(editableEntity.GetPlayerID());
+					}
 					
 					// Logging Mechanism: Get Attribute
 					attributeStr = attribute.GetUIInfo().GetName();
