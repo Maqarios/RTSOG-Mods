@@ -34,16 +34,15 @@ class RTSOGLimited_ArsenalComponent: SCR_ArsenalComponent {
 		foreach (Faction faction : factions) {
 			string factionName = faction.GetFactionName();
 			if (blacklistedFactions.Contains(factionName)) {
-				PrintFormat("RTSOGLimited_ArsenalComponent | Removing Faction: %1", factionName, level: LogLevel.NORMAL);
+				//PrintFormat("RTSOGLimited_ArsenalComponent | Removing Faction: %1", factionName, level: LogLevel.NORMAL);
 				continue;
 			} else {
-				PrintFormat("RTSOGLimited_ArsenalComponent | Adding Faction: %1", factionName, level: LogLevel.NORMAL);
+				//PrintFormat("RTSOGLimited_ArsenalComponent | Adding Faction: %1", factionName, level: LogLevel.NORMAL);
 			}
 			
 			SCR_Faction scrFaction = SCR_Faction.Cast(faction);
 			if (!scrFaction) {
 				PrintFormat("RTSOGLimited_ArsenalComponent | Faction %1 is not of SCR_Faction type!", faction, level: LogLevel.WARNING);
-				
 				continue;
 			}
 
@@ -63,11 +62,11 @@ class RTSOGLimited_ArsenalComponent: SCR_ArsenalComponent {
 				}
 				
 				if (!isRemoved) {
-					PrintFormat("RTSOGLimited_ArsenalComponent | Adding Item: %1", arsenalItem.GetItemResourceName(), level: LogLevel.NORMAL);
+					//PrintFormat("RTSOGLimited_ArsenalComponent | Adding Item: %1", arsenalItem.GetItemResourceName(), level: LogLevel.NORMAL);
 					tempResourceNames.Insert(arsenalItem.GetItemResourceName());
 					filteredArsenalItems.Insert(arsenalItem);
 				} else {
-					PrintFormat("RTSOGLimited_ArsenalComponent | Removing Item: %1", arsenalItem.GetItemResourceName(), level: LogLevel.NORMAL);
+					//PrintFormat("RTSOGLimited_ArsenalComponent | Removing Item: %1", arsenalItem.GetItemResourceName(), level: LogLevel.NORMAL);
 				}
 			}
 		}
